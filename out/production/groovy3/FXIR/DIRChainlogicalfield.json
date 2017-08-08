@@ -1,0 +1,55 @@
+{
+
+  "Identifier": [
+    {
+      "fields": [
+        "/Identifier/IdentifierValue/a/identifierEntityId"
+      ],
+      "mpName": [
+        "secondCurrencyIdentifier00"
+      ],
+      "mpPath": [
+        "/Identifier/"
+      ]
+    },
+    {
+      "fields": [
+        "/Identifier/IdentifierValue/v"
+      ],
+      "mpName": [
+        "contrLocCode0"
+      ],
+      "mpPath": [
+        "/Identifier/"
+      ]
+    }
+
+  ],
+  "TimeZone": [
+    {
+      "fields": [
+        "/TimeZone/a/timeZoneId000"
+      ],
+      "mpName": [
+        "contrLoc"
+      ],
+      "mpPath": [
+        "/TimeZone/"
+      ]
+    }
+  ],
+  "TimeZone2": [
+    {
+      "fields": [
+        "/TimeZone/a/timeZoneId000"
+      ],
+      "mpName": [
+        "contrLoc"
+      ],
+      "mpPath": [
+        "/TimeZone/"
+      ]
+    }
+  ]
+
+}
