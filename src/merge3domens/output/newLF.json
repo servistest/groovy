@@ -1,0 +1,377 @@
+{
+    "Relationship": [
+        {
+            "fields": [
+                "/Relationship/RelationObjectId/a/relatedObjectId"
+            ],
+            "mpName": [
+                "HasInstruments0"
+            ],
+            "mpPath": [
+                "/Relationship/"
+            ]
+        },
+        {
+            "fields": [
+                "/Relationship/RelationObjectId/v"
+            ],
+            "mpName": [
+                "HasContributedChains0"
+            ],
+            "mpPath": [
+                "/Relationship/"
+            ]
+        },
+        {
+            "fields": [
+                "/Relationship/RelationObjectId/v"
+            ],
+            "mpName": [
+                "HasConstituents0"
+            ],
+            "mpPath": [
+                "/Relationship/"
+            ]
+        },
+        {
+            "fields": [
+                "/Relationship/RelationObjectId/a/relatedObjectId"
+            ],
+            "mpName": [
+                "IsPrimaryVehicleFor1"
+            ],
+            "mpPath": [
+                "/Relationship/"
+            ]
+        },
+        {
+            "fields": [
+                "/Relationship/RelationObjectId/v"
+            ],
+            "mpName": [
+                "IsPrimaryVehicleFor0"
+            ],
+            "mpPath": [
+                "/Relationship/"
+            ]
+        },
+        {
+            "fields": [
+                "/Relationship/RelationObjectId/a/relatedObjectId"
+            ],
+            "mpName": [
+                "IsChainFor1"
+            ],
+            "mpPath": [
+                "/Relationship/"
+            ]
+        },
+        {
+            "fields": [
+                "/Relationship/RelationObjectId/v"
+            ],
+            "mpName": [
+                "IsChainFor0"
+            ],
+            "mpPath": [
+                "/Relationship/"
+            ]
+        }
+    ],
+    "FxirUnderlyingAttr": [
+        {
+            "fields": [
+                "/FxirUnderlyingAttr/a/fxirUndlyStructureId"
+            ],
+            "mpName": [
+                "undlyLeg20"
+            ],
+            "mpPath": [
+                "/FxirUnderlyingAttr/"
+            ]
+        },
+        {
+            "fields": [
+                "/FxirUnderlyingAttr/FxirUndlyFrequency/v"
+            ],
+            "mpName": [
+                "undlyLeg21"
+            ],
+            "mpPath": [
+                "/FxirUnderlyingAttr/"
+            ]
+        },
+        {
+            "fields": [
+                "/FxirUnderlyingAttr/FxirUndlyFrequency/v"
+            ],
+            "mpName": [
+                "undlyLeg11"
+            ],
+            "mpPath": [
+                "/FxirUnderlyingAttr/"
+            ]
+        },
+        {
+            "fields": [
+                "/FxirUnderlyingAttr/a/fxirUndlyStructureId"
+            ],
+            "mpName": [
+                "undlyLeg10"
+            ],
+            "mpPath": [
+                "/FxirUnderlyingAttr/"
+            ]
+        }
+    ],
+    "FxirChain": [
+        {
+            "fields": [
+                "/FxirChain/FxirChainPriceSourceCode/v"
+            ],
+            "mpName": [
+                "chain0"
+            ],
+            "mpPath": [
+                "/FxirChain/"
+            ]
+        },
+        {
+            "fields": [
+                "/FxirChain/FxirChainVehicleId/v"
+            ],
+            "mpName": [
+                "chain3"
+            ],
+            "mpPath": [
+                "/FxirChain/"
+            ]
+        },
+        {
+            "fields": [
+                "/FxirChain/FxirChainPriceType/v"
+            ],
+            "mpName": [
+                "chain2"
+            ],
+            "mpPath": [
+                "/FxirChain/"
+            ]
+        },
+        {
+            "fields": [
+                "/FxirChain/FxirChainContributorType/v"
+            ],
+            "mpName": [
+                "chain1"
+            ],
+            "mpPath": [
+                "/FxirChain/"
+            ]
+        }
+    ],
+    "Identifier": [
+        {
+            "fields": [
+                "/Identifier/IdentifierValue/a/identifierEntityId"
+            ],
+            "mpName": [
+                "ricIdentifier0"
+            ],
+            "mpPath": [
+                "/Identifier/"
+            ]
+        },
+        {
+            "fields": [
+                "/Identifier/IdentifierValue/a/identifierEntityId"
+            ],
+            "mpName": [
+                "ricRootIdentifier0"
+            ],
+            "mpPath": [
+                "/Identifier/"
+            ]
+        }
+    ],
+    "FxirVehicle": [
+        {
+            "fields": [
+                "/FxirVehicle/a/vehicleId"
+            ],
+            "mpName": [
+                "vehicle0C3"
+            ],
+            "mpPath": [
+                "/FxirVehicle/"
+            ]
+        },
+        {
+            "fields": [
+                "/FxirVehicle/a/vehicleId"
+            ],
+            "mpName": [
+                "vehicle0C2"
+            ],
+            "mpPath": [
+                "/FxirVehicle/"
+            ]
+        },
+        {
+            "fields": [
+                "/FxirVehicle/a/vehicleId"
+            ],
+            "mpName": [
+                "vehicle0C1"
+            ],
+            "mpPath": [
+                "/FxirVehicle/"
+            ]
+        }
+    ],
+    "FxirStructure": [
+        {
+            "fields": [
+                "/FxirStructure/a/fxirStructureId"
+            ],
+            "mpName": [
+                "structure2C6"
+            ],
+            "mpPath": [
+                "/FxirStructure/"
+            ]
+        },
+        {
+            "fields": [
+                "/FxirStructure/a/fxirStructureId"
+            ],
+            "mpName": [
+                "structureForPrimaryVehicle0"
+            ],
+            "mpPath": [
+                "/FxirStructure/"
+            ]
+        },
+        {
+            "fields": [
+                "/FxirStructure/a/fxirStructureId"
+            ],
+            "mpName": [
+                "structure2C5"
+            ],
+            "mpPath": [
+                "/FxirStructure/"
+            ]
+        },
+        {
+            "fields": [
+                "/FxirStructure/FxirStructRateType/v"
+            ],
+            "mpName": [
+                "structure11n1"
+            ],
+            "mpPath": [
+                "/FxirStructure/"
+            ]
+        },
+        {
+            "fields": [
+                "/FxirStructure/a/fxirStructureId"
+            ],
+            "mpName": [
+                "structureForFirstCurrency11n1"
+            ],
+            "mpPath": [
+                "/FxirStructure/"
+            ]
+        },
+        {
+            "fields": [
+                "/FxirStructure/FxirStructCurrencies/FxirStructCurrency/FxirStructCurrencyId/v"
+            ],
+            "mpName": [
+                "structureForFirstCurrency01n1"
+            ],
+            "mpPath": [
+                "/FxirStructure/"
+            ]
+        },
+        {
+            "fields": [
+                "/FxirStructure/FxirStructCurrencies/FxirStructCurrency/FxirStructCurrencyId/v"
+            ],
+            "mpName": [
+                "structureForSecondCurrency0"
+            ],
+            "mpPath": [
+                "/FxirStructure/"
+            ]
+        },
+        {
+            "fields": [
+                "/FxirStructure/a/fxirStructureId"
+            ],
+            "mpName": [
+                "structureForSecondCurrency1"
+            ],
+            "mpPath": [
+                "/FxirStructure/"
+            ]
+        },
+        {
+            "fields": [
+                "/FxirStructure/a/fxirStructureId"
+            ],
+            "mpName": [
+                "structure2C4"
+            ],
+            "mpPath": [
+                "/FxirStructure/"
+            ]
+        },
+        {
+            "fields": [
+                "/FxirStructure/FxirStructCurveSubType/v"
+            ],
+            "mpName": [
+                "structure51n1"
+            ],
+            "mpPath": [
+                "/FxirStructure/"
+            ]
+        },
+        {
+            "fields": [
+                "/FxirStructure/FxirStructAssetClassId/v"
+            ],
+            "mpName": [
+                "structure41n1"
+            ],
+            "mpPath": [
+                "/FxirStructure/"
+            ]
+        },
+        {
+            "fields": [
+                "/FxirStructure/FxirStructTenorId/v"
+            ],
+            "mpName": [
+                "structure3"
+            ],
+            "mpPath": [
+                "/FxirStructure/"
+            ]
+        },
+        {
+            "fields": [
+                "/FxirStructure/FxirStructIborType/v"
+            ],
+            "mpName": [
+                "structure01n1"
+            ],
+            "mpPath": [
+                "/FxirStructure/"
+            ]
+        }
+    ]
+}

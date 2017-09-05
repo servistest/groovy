@@ -1,0 +1,7 @@
+insert into tmp_chinese(key,name)
+  select c.currencyid,c.currencyname from (
+                                            select max(currencynameeffectivefrom) as maxtimestamp, currencyid, currencylanguageid, currencynametype from currencyname
+                                            where currencylanguageid = 505049 and currencynametype = 404500
+                                            group by currencyid, currencylanguageid, currencynametype) a
+    join currencyname c on c.currencyid=a.currencyid and c.currencylanguageid=a.currencylanguageid
+                           and c.currencynametype=a.currencynametype and c.currencynameeffectivefrom = a.maxtimestamp;

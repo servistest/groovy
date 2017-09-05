@@ -1,0 +1,151 @@
+{
+    "Currency": [
+        {
+            "fields": [
+                "/Currency/a/currencyId"
+            ],
+            "mpName": [
+                "secondCurrency0C1"
+            ],
+            "mpPath": [
+                "/Currency/"
+            ]
+        },
+        {
+            "fields": [
+                "/Currency/a/currencyId"
+            ],
+            "mpName": [
+                "secondCurrency0C0"
+            ],
+            "mpPath": [
+                "/Currency/"
+            ]
+        },
+        {
+            "fields": [
+                "/Currency/a/currencyId"
+            ],
+            "mpName": [
+                "firstCurrency0C1"
+            ],
+            "mpPath": [
+                "/Currency/"
+            ]
+        },
+        {
+            "fields": [
+                "/Currency/a/currencyId"
+            ],
+            "mpName": [
+                "firstCurrency0C0"
+            ],
+            "mpPath": [
+                "/Currency/"
+            ]
+        }
+    ],
+    "Identifier": [
+        {
+            "fields": [
+                "/Identifier/IdentifierValue/v"
+            ],
+            "mpName": [
+                "contrLocCode01n1"
+            ],
+            "mpPath": [
+                "/Identifier/"
+            ]
+        },
+        {
+            "fields": [
+                "/Identifier/IdentifierValue/a/identifierEntityId"
+            ],
+            "mpName": [
+                "contrLocCode11n1"
+            ],
+            "mpPath": [
+                "/Identifier/"
+            ]
+        },
+        {
+            "fields": [
+                "/Identifier/IdentifierValue/a/identifierEntityId"
+            ],
+            "mpName": [
+                "secondCurrencyIdentifier0"
+            ],
+            "mpPath": [
+                "/Identifier/"
+            ]
+        },
+        {
+            "fields": [
+                "/Identifier/IdentifierValue/a/identifierEntityId"
+            ],
+            "mpName": [
+                "firstCurrencyExtIdentifier0"
+            ],
+            "mpPath": [
+                "/Identifier/"
+            ]
+        },
+        {
+            "fields": [
+                "/Identifier/IdentifierValue/a/identifierEntityId"
+            ],
+            "mpName": [
+                "firstCurrencyIdentifier0"
+            ],
+            "mpPath": [
+                "/Identifier/"
+            ]
+        },
+        {
+            "fields": [
+                "/Identifier/IdentifierValue/a/identifierEntityId"
+            ],
+            "mpName": [
+                "contrLocCode0"
+            ],
+            "mpPath": [
+                "/Identifier/"
+            ]
+        },
+        {
+            "fields": [
+                "/Identifier/IdentifierValue/v"
+            ],
+            "mpName": [
+                "contrLocCode1"
+            ],
+            "mpPath": [
+                "/Identifier/"
+            ]
+        },
+        {
+            "fields": [
+                "/Identifier/IdentifierValue/a/identifierEntityId"
+            ],
+            "mpName": [
+                "secondCurrencyExtIdentifier0"
+            ],
+            "mpPath": [
+                "/Identifier/"
+            ]
+        }
+    ],
+    "TimeZone": [
+        {
+            "fields": [
+                "/TimeZone/a/timeZoneId"
+            ],
+            "mpName": [
+                "contrLoc0"
+            ],
+            "mpPath": [
+                "/TimeZone/"
+            ]
+        }
+    ]
+}
