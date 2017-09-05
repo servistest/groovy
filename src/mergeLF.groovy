@@ -1,30 +1,35 @@
+//
+//  File: mergeLF.groovy
+//
+//  The script for merging two json with logical fields.
+//
 import groovy.json.JsonBuilder
 import groovy.json.JsonException
 import groovy.json.JsonSlurper
 import groovy.transform.Field
 
 /**
- * Created by alex on 23.5.17.
+ * Created  3.8.17.
  */
 
 @Field File lfFile
 @Field File ruleFile
 @Field File baseLfFile
-@Field File outDir;
-@Field File newLfFile;
+@Field File outDir
 
 
-@Field Map<String, String> baseLFMaps = new HashMap<>();
-@Field Map<String, String> lfMaps = new HashMap<>();
-@Field Map<String, String> newLFMaps = new HashMap<>();
+
+@Field Map baseLFMaps = new HashMap<>()
+@Field Map lfMaps = new HashMap<>()
 
 
 @Field List logicalNameToChangeList = new ArrayList()
-@Field List logicalNameToReplaceList = new ArrayList()
 
 @Field String postfixForNewLogicalName = "1n1"
-@Field String newLFNameFile = "/newLF.json"
-@Field String newRuleFile = "/newRule.json"
+
+@Field String newLFFileName = "/newLF.json"
+@Field String newRuleFileName = "/newRule.json"
+@Field String mergeLfFileName = "/merge_lf.json"
 
 @Field Integer countArguments = 4
 
@@ -36,6 +41,7 @@ void outInformationScript() {
     println("rule: path to ruledir for lf json ")
     println("base: the logic fields as base, not change json")
     println("outdir: the merged result")
+    println("eg : groovy ./mergeLF.groovy  FXIR/DIRChainlogicalfield.json   FXIR/ruleChain.json FXIR/DIRQuotelogicalfield.json  FXIR/output")
     System.exit(0)
 
 }
@@ -47,6 +53,17 @@ void outError(String nameFile) {
     System.exit(0)
 
 }
+
+void printList(List list, String information) {
+    println()
+    println(information)
+    println("Amount of elements =  " + list.size())
+    println()
+    list.each {
+        println(it + " -->" + it + postfixForNewLogicalName)
+    }
+}
+
 
 void checkExistsInputFiles() {
 
@@ -64,7 +81,8 @@ void checkExistsInputFiles() {
 
 }
 
-void extractFieldsAndMpNameFromLF(File fileName, Map<String, String> lfMap) {
+def checkFileAndParse(File fileName) {
+
     def json
 
     try {
@@ -73,30 +91,45 @@ void extractFieldsAndMpNameFromLF(File fileName, Map<String, String> lfMap) {
         println fileName + " - File is not valid"
         throw e
     }
+    return json
+}
+
+void extractFieldsAndMpNameFromLF(File fileName, Map lfMap) {
+
+    def json = checkFileAndParse(fileName)
 
     json.each {
 
         for (int i = 0; i < it.value.size; i++) {
-            lfMap.put((String) it.value[i].mpName, (String) it.value[i].fields)
+
+            if (!lfMap[(String) it.value[i].mpName]) {
+
+                //Check for the same logical names in one file
+                lfMap.put((String) it.value[i].mpName, (String) it.value[i].fields)
+
+            } else {
+
+                println("The same logical fields !!!  - " + it.value[i].mpName + " in the " + fileName + " Please correct!!!")
+                System.exit(0)
+
+            }
         }
     }
 }
 
-void findSameMpNames() {
+void findCollisions(Map lfMaps, Map baseLFMaps) {
+    println()
+    println " SEARCH COLLISIONS .."
+    println "                                   LF                                                                            Base LF                                       "
 
-    println "  ----------------------------------------WE SEEK SAME LOGICAL FIELDS BUT WITH DIFFERENT VALUE ----------------------------------------"
-    println " --------------------------------LF-----------------------------------------------------------------------------------Base LF ----------------------------------------"
-
-    for (Map.Entry<String, String> lfEntry : lfMaps.entrySet()) {
-        for (Map.Entry<String, String> baseLFEntry : baseLFMaps.entrySet()) {
+    for (Map.Entry lfEntry : lfMaps.entrySet()) {
+        for (Map.Entry baseLFEntry : baseLFMaps.entrySet()) {
             if ((baseLFEntry.getKey() == lfEntry.getKey()) && (lfEntry.getValue() != baseLFEntry.value)) {
 
                 logicalNameToChangeList.add(lfEntry.getKey().replace("[", "").replace("]", ""))
 
-
                 printf('%-115s', lfEntry.getKey().replace("[", "").replace("]", "") + " " + lfEntry.getValue() + "      ")
                 println baseLFEntry.key.replace("[", "").replace("]", "") + " " + baseLFEntry.value
-
             }
 
         }
@@ -105,182 +138,152 @@ void findSameMpNames() {
 }
 
 
-void replacementInLFAndSaveFile() {
+void сollisionsDeleting(File inFile, String pathToOutFile, List replaceList) {
 
-    println("---------------Replacement with new names in LF file---------------------- ")
+    String ruleText = inFile.text
 
-    String lfFileText = lfFile.text
-
-    for (String logicalName : logicalNameToChangeList) {
-
-        lfFileText = lfFileText.replaceAll('"' + logicalName + '"', '"' + logicalName + postfixForNewLogicalName + '"')
-        println "change " + logicalName + "--->" + logicalName + postfixForNewLogicalName
-    }
-
-    def newLFJson = new JsonSlurper().parseText(lfFileText)
-    def builder = new JsonBuilder(newLFJson)
-
-    //save  LF file with new logical names
-    new File(outDir.path + newLFNameFile).write(builder.toPrettyString())
-
-}
-
-void replacementInRuleAndSaveFile() {
-
-    String ruleText = ruleFile.text
-
-    for (String logicalName : logicalNameToChangeList) {
-//        ruleText = ruleText.replaceAll(logicalName, logicalName + postfixForNewLogicalName)
+    for (String logicalName : replaceList) {
         ruleText = ruleText.replaceAll('"' + logicalName + '"', '"' + logicalName + postfixForNewLogicalName + '"')
         ruleText = ruleText.replaceAll('/' + logicalName + '/', '/' + logicalName + postfixForNewLogicalName + '/')
+
     }
 
     def newJSONRule = new JsonSlurper().parseText(ruleText)
     def builderRule = new JsonBuilder(newJSONRule)
-
-    new File(outDir.path + newRuleFile).write(builderRule.toPrettyString())
+    new File(pathToOutFile).write(builderRule.toPrettyString())
 
 }
 
-void findSameFieldsInLF(def lfMaps, def baseLFMaps) {
 
-    println "  ----------------------------------------findSameFieldsInLF ----------------------------------------"
-    println " --------------------------------LF-----------------------------------------------------------------------------------Base LF ----------------------------------------"
-    def i = 1
-    Map changes = new HashMap()
-    def lfName
-    def baseName
-    for (Map.Entry<String, String> baseLFEntry : baseLFMaps.entrySet()) {
-        for (Map.Entry<String, String> lfEntry : lfMaps.entrySet()) {
-            lfName = lfEntry.getKey().replace("[", "").replace("]", "")
-            baseName = baseLFEntry.getKey().replace("[", "").replace("]", "")
+void mergeLogicalFields(String pathToNewLfFile, File baseLfFile, String pathToMergeFile) {
 
-            if ((baseLFEntry.getKey() != lfEntry.getKey()) && (lfEntry.getValue() == baseLFEntry.value) && (!logicalNameToReplaceList.contains(lfName))) {
+    File newLfFile = new File(pathToNewLfFile)
 
-                changes.put(lfName, baseName)
+    // json with  lf
+    def newLfJson = checkFileAndParse(newLfFile)
+    // json with base lf
+    def baseLfJson = checkFileAndParse(baseLfFile)
+    // json for merge lf
+    def mergeJson = new JsonSlurper().parseText('{}')
 
-                logicalNameToReplaceList.add(lfName)
-                print i++ + " "
-                printf('%-115s', lfName + " " + lfEntry.getValue() + "      ")
-                println baseName + " " + baseLFEntry.value
-                break
-            }
-        }
-    }
-    println(logicalNameToReplaceList + " " + changes)
-    println("changes= " + changes)
-}
+    def lfCurrentFields
+    def lfCurrentMpName
+    def lfBaseCurrentFields
+    def lfBaseCurrentMpName
+    def lfCurrentRootItem
+    Boolean isExistField
 
-void mergeLogicalFields() {
-
-    newLfFile = new File(outDir.path + newLFNameFile)
-    assert newLfFile.exists(): outError(newLfFile.name)
-    def newLfJson = new JsonSlurper().parseText(newLfFile.text)
-
-    def baseLfJson = new JsonSlurper().parseText(baseLfFile.text)
-
-    def tempJson = new JsonSlurper().parseText('{}')
-
-
-    Map changeMap = new HashMap()
+    Map mergeLfMap = new HashMap<>()
 
     baseLfJson.each {
 
-        LinkedHashMap tempLinkedHasMap = new HashMap<>()
-        List listLazyMap = new ArrayList()
+        List itemsForMergeList = new ArrayList()
+        mergeLfMap.clear()
 
+        //current root item from lf
+        lfCurrentRootItem = newLfJson.get(it.key)
 
+        if (lfCurrentRootItem != null) {
 
-        def lfItem = newLfJson.get(it.key)
-        if (lfItem != null){
+            for (int j = 0; j < lfCurrentRootItem.size; j++) {
 
-            def existField
-            for (int j = 0; j < lfItem.size; j++) {
+                lfCurrentFields = lfCurrentRootItem[j].fields
+                lfCurrentMpName = lfCurrentRootItem[j].mpName
 
-                existField = false;
+                isExistField = false
+
                 for (int i = 0; i < it.value.size; i++) {
-                    def tmp1 = lfItem[j].fields
-                    def tmp2 = it.value[i].fields
+                    lfBaseCurrentFields = it.value[i].fields
+                    lfBaseCurrentMpName = it.value[i].mpName
 
-                    if (tmp1 == tmp2) {
-                        existField = true
+                    //if such an element exists in base-lf, then we skip it
+                    if (lfCurrentFields == lfBaseCurrentFields && lfCurrentMpName == lfBaseCurrentMpName) {
+                        isExistField = true
                         break
                     }
-
                 }
 
-                if (!existField) {
-                    listLazyMap.add(lfItem[j])
-                    existField = true
+                //  add items in the list from lf  which are not in the base-lf
+                if (!isExistField) {
+                    itemsForMergeList.add(lfCurrentRootItem[j])
+//                    println(lfCurrentRootItem[j])
                 }
             }
         }
 
-
-
+        //  add all  items current from root-element  base-lf  for merge
         for (int j = 0; j < it.value.size; j++) {
-            listLazyMap.add(it.value[j])
-            tempLinkedHasMap.put(it.key, listLazyMap)
+            itemsForMergeList.add(it.value[j])
+            mergeLfMap.put(it.key, itemsForMergeList)
         }
 
-            tempJson << tempLinkedHasMap
-
-
+        // add to merge-json items
+        mergeJson << mergeLfMap
 
     }
 
-// Merge
-    def tempMap = new HashMap()
+    //  search roots items from lf  which are not in the base-lf
+    def mapToAddToJson = new HashMap()
+    Boolean toAdd
     newLfJson.each {
-
         currentNewLFElement = it
-        def change = true
+        toAdd = true
         baseLfJson.each {
             if (it.key == currentNewLFElement.key) {
-                change = false
+                toAdd = false
             }
 
         }
-        if (change) {
-            tempMap.put(currentNewLFElement.key, currentNewLFElement.value)
+        if (toAdd) {
+            mapToAddToJson.put(currentNewLFElement.key, currentNewLFElement.value)
         }
     }
 
-    baseLfJson << tempMap
+    // add to merge-json  roots items from lf  which are not in the base-lf
+    mergeJson << mapToAddToJson
 
-    tempJson << tempMap
-
-
-    JsonBuilder tempJsonBuilder = new JsonBuilder(tempJson)
-    new File(outDir.path + "/temp_lf.json").write(tempJsonBuilder.toPrettyString())
-
-//    println "Add to base LF - " + tempMap
-//    JsonBuilder mergeJsonBuilder = new JsonBuilder(baseLfJson)
-//    new File(outDir.path + "/merge_lf.json").write(mergeJsonBuilder.toPrettyString())
+    //save merge-json to file
+    JsonBuilder mergeJsonBuilder = new JsonBuilder(mergeJson)
+    new File(pathToMergeFile).write(mergeJsonBuilder.toPrettyString())
 
 }
 
 //-----------start script----------------------
 
+// checks  arguments for starts script
 if (args.length != countArguments) {
     outInformationScript()
 }
+// checks exist files
 checkExistsInputFiles()
-extractFieldsAndMpNameFromLF(baseLfFile, baseLFMaps)
-extractFieldsAndMpNameFromLF(lfFile, lfMaps)
-findSameMpNames()
-replacementInLFAndSaveFile()
-replacementInRuleAndSaveFile()
-mergeLogicalFields()
 
-///!!!!!!!!!!!! CHANGE RETURN!!!!!!!!
-//newLfFile = new File(outDir.path + newLFNameFile)
-//newLfFile = new File(args[0])
-//
-//assert newLfFile.exists(): outError(newLfFile.name)
-//extractFieldsAndMpNameFromLF(newLfFile, newLFMaps)
-//
-//findSameFieldsInLF(newLFMaps,baseLFMaps)
+//Retrieval fields for compare from base LF
+extractFieldsAndMpNameFromLF(baseLfFile, baseLFMaps)
+
+//Retrieval fields for compare from LF
+extractFieldsAndMpNameFromLF(lfFile, lfMaps)
+
+// find collisions - compare fields and mpName
+findCollisions(lfMaps, baseLFMaps)
+
+// print all collisions
+printList(logicalNameToChangeList, "COLLISIONS DELETING ..... RENAMING FIELDS IN LF AND RULE ")
+
+//rename fields in rule
+сollisionsDeleting(ruleFile, outDir.path + newRuleFileName, logicalNameToChangeList)
+
+//rename fields in lf
+сollisionsDeleting(lfFile, outDir.path + newLFFileName, logicalNameToChangeList)
+
+//merge lf and base lf
+mergeLogicalFields(outDir.path + newLFFileName, baseLfFile, outDir.path + mergeLfFileName)
+
+
+
+
+
+
+
 
 
 

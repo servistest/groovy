@@ -1,11 +1,57 @@
 {
+    "Currency": [
+        {
+            "fields": [
+                "/Currency/a/currencyId"
+            ],
+            "mpName": [
+                "firstCurrency0C1"
+            ],
+            "mpPath": [
+                "/Currency/"
+            ]
+        },
+        {
+            "fields": [
+                "/Currency/a/currencyId"
+            ],
+            "mpName": [
+                "firstCurrency0C0"
+            ],
+            "mpPath": [
+                "/Currency/"
+            ]
+        },
+        {
+            "fields": [
+                "/Currency/a/currencyId"
+            ],
+            "mpName": [
+                "firstCurrency0C1"
+            ],
+            "mpPath": [
+                "/Currency/"
+            ]
+        },
+        {
+            "fields": [
+                "/Currency/a/currencyId"
+            ],
+            "mpName": [
+                "firstCurrency0C0"
+            ],
+            "mpPath": [
+                "/Currency/"
+            ]
+        }
+    ],
     "Identifier": [
         {
             "fields": [
                 "/Identifier/IdentifierValue/a/identifierEntityId"
             ],
             "mpName": [
-                "secondCurrencyIdentifier00"
+                "secondCurrencyIdentifier0"
             ],
             "mpPath": [
                 "/Identifier/"
@@ -16,7 +62,51 @@
                 "/Identifier/IdentifierValue/v"
             ],
             "mpName": [
-                "contrLocCode0"
+                "contrLocCode1"
+            ],
+            "mpPath": [
+                "/Identifier/"
+            ]
+        },
+        {
+            "fields": [
+                "/Identifier/IdentifierValue/a/identifierEntityId"
+            ],
+            "mpName": [
+                "secondCurrencyIdentifier0"
+            ],
+            "mpPath": [
+                "/Identifier/"
+            ]
+        },
+        {
+            "fields": [
+                "/Identifier/IdentifierValue/a/identifierEntityId"
+            ],
+            "mpName": [
+                "firstCurrencyExtIdentifier0"
+            ],
+            "mpPath": [
+                "/Identifier/"
+            ]
+        },
+        {
+            "fields": [
+                "/Identifier/IdentifierValue/a/identifierEntityId"
+            ],
+            "mpName": [
+                "firstCurrencyExtIdentifier0"
+            ],
+            "mpPath": [
+                "/Identifier/"
+            ]
+        },
+        {
+            "fields": [
+                "/Identifier/IdentifierValue/a/identifierEntityId"
+            ],
+            "mpName": [
+                "firstCurrencyIdentifier0"
             ],
             "mpPath": [
                 "/Identifier/"
@@ -26,10 +116,10 @@
     "TimeZone": [
         {
             "fields": [
-                "/TimeZone/a/timeZoneId000"
+                "/TimeZone/a/timeZoneId"
             ],
             "mpName": [
-                "contrLoc"
+                "contrLoc0"
             ],
             "mpPath": [
                 "/TimeZone/"

@@ -1,167 +1,375 @@
 {
-	"Metadata_Mapping": [{
-		"fields": ["/Metadata_Mapping/value/v"],
-		"mpName": ["iborTypeMapping0"],
-		"mpPath": ["/Metadata_Mapping/"]
-	},
-	{
-		"fields": ["/Metadata_Mapping/perm_id/v"],
-		"mpName": ["iborTypeMapping1"],
-		"mpPath": ["/Metadata_Mapping/"]
-	},
-	{
-		"fields": ["/Metadata_Mapping/value/v"],
-		"mpName": ["contributorCountryMapping1"],
-		"mpPath": ["/Metadata_Mapping/"]
-	},
-	{
-		"fields": ["/Metadata_Mapping/perm_id/v"],
-		"mpName": ["contributorCountryMapping0"],
-		"mpPath": ["/Metadata_Mapping/"]
-	},
-	{
-		"fields": ["/Metadata_Mapping/value/v"],
-		"mpName": ["contributorTypeMapping0"],
-		"mpPath": ["/Metadata_Mapping/"]
-	},
-	{
-		"fields": ["/Metadata_Mapping/perm_id/v"],
-		"mpName": ["contributorTypeMapping1"],
-		"mpPath": ["/Metadata_Mapping/"]
-	},
-	{
-		"fields": ["/Metadata_Mapping/perm_id/v"],
-		"mpName": ["exchangeCountryMapping1"],
-		"mpPath": ["/Metadata_Mapping/"]
-	},
-	{
-		"fields": ["/Metadata_Mapping/value/v"],
-		"mpName": ["exchangeCountryMapping0"],
-		"mpPath": ["/Metadata_Mapping/"]
-	},
-	{
-		"fields": ["/Metadata_Mapping/value/v"],
-		"mpName": ["rateTypeMapping0"],
-		"mpPath": ["/Metadata_Mapping/"]
-	},
-	{
-		"fields": ["/Metadata_Mapping/value/v"],
-		"mpName": ["curveSubTypeMapping1"],
-		"mpPath": ["/Metadata_Mapping/"]
-	},
-	{
-		"fields": ["/Metadata_Mapping/perm_id/v"],
-		"mpName": ["rateTypeMapping1"],
-		"mpPath": ["/Metadata_Mapping/"]
-	},
-	{
-		"fields": ["/Metadata_Mapping/value/v"],
-		"mpName": ["priceTypeMapping0"],
-		"mpPath": ["/Metadata_Mapping/"]
-	},
-	{
-		"fields": ["/Metadata_Mapping/perm_id/v"],
-		"mpName": ["priceTypeMapping1"],
-		"mpPath": ["/Metadata_Mapping/"]
-	},
-	{
-		"fields": ["/Metadata_Mapping/perm_id/v"],
-		"mpName": ["curveSubTypeMapping0"],
-		"mpPath": ["/Metadata_Mapping/"]
-	}],
-	"FrequencyDescription": [{
-		"fields": ["/FrequencyDescription/Code/v"],
-		"mpName": ["fd10"],
-		"mpPath": ["/FrequencyDescription/"]
-	},
-	{
-		"fields": ["/FrequencyDescription/Code/v"],
-		"mpName": ["fd20"],
-		"mpPath": ["/FrequencyDescription/"]
-	}],
-	"Metadata_Fanout": [{
-		"fields": ["/Metadata_Fanout/perm_id/v"],
-		"mpName": ["rateTypeFanout0"],
-		"mpPath": ["/Metadata_Fanout/"]
-	},
-	{
-		"fields": ["/Metadata_Fanout/perm_id/v"],
-		"mpName": ["contributorTypeFanout0"],
-		"mpPath": ["/Metadata_Fanout/"]
-	},
-	{
-		"fields": ["/Metadata_Fanout/perm_id/v"],
-		"mpName": ["curveSubTypeFanout0"],
-		"mpPath": ["/Metadata_Fanout/"]
-	},
-	{
-		"fields": ["/Metadata_Fanout/perm_id/v"],
-		"mpName": ["exchangeCountryFanout0"],
-		"mpPath": ["/Metadata_Fanout/"]
-	},
-	{
-		"fields": ["/Metadata_Fanout/perm_id/v"],
-		"mpName": ["secondCurrencyFanout0"],
-		"mpPath": ["/Metadata_Fanout/"]
-	},
-	{
-		"fields": ["/Metadata_Fanout/perm_id/v"],
-		"mpName": ["contributorCountryFanout0"],
-		"mpPath": ["/Metadata_Fanout/"]
-	},
-	{
-		"fields": ["/Metadata_Fanout/perm_id/v"],
-		"mpName": ["firstCurrencyFanout0"],
-		"mpPath": ["/Metadata_Fanout/"]
-	},
-	{
-		"fields": ["/Metadata_Fanout/perm_id/v"],
-		"mpName": ["priceTypeFanout0"],
-		"mpPath": ["/Metadata_Fanout/"]
-	},
-	{
-		"fields": ["/Metadata_Fanout/perm_id/v"],
-		"mpName": ["tenorFanout0"],
-		"mpPath": ["/Metadata_Fanout/"]
-	},
-	{
-		"fields": ["/Metadata_Fanout/perm_id/v"],
-		"mpName": ["assetClassFanout0"],
-		"mpPath": ["/Metadata_Fanout/"]
-	},
-	{
-		"fields": ["/Metadata_Fanout/perm_id/v"],
-		"mpName": ["iborTypeFanout0"],
-		"mpPath": ["/Metadata_Fanout/"]
-	}],
-	"Contributor": [{
-		"fields": ["/Contributor/DS_PriceSourceCode/v"],
-		"mpName": ["contributor4"],
-		"mpPath": ["/Contributor/"]
-	},
-	{
-		"fields": ["/Contributor/DS_ExchangeCountryCode/v"],
-		"mpName": ["contributor1"],
-		"mpPath": ["/Contributor/"]
-	},
-	{
-		"fields": ["/Contributor/DS_ContributorLocationCode/v"],
-		"mpName": ["contributor0"],
-		"mpPath": ["/Contributor/"]
-	},
-	{
-		"fields": ["/Contributor/DS_ContributorCountryCode/v"],
-		"mpName": ["contributor3"],
-		"mpPath": ["/Contributor/"]
-	},
-	{
-		"fields": ["/Contributor/DS_ContributorCommonName/v"],
-		"mpName": ["contributor2"],
-		"mpPath": ["/Contributor/"]
-	}],
-	"BankGuideMapping": [{
-		"fields": ["/BankGuideMapping/ContributorsName/v"],
-		"mpName": ["bankGuide0"],
-		"mpPath": ["/BankGuideMapping/"]
-	}]
+  "Metadata_Mapping": [
+    {
+      "fields": [
+        "/Metadata_Mapping/value/v"
+      ],
+      "mpName": [
+        "iborTypeMapping0"
+      ],
+      "mpPath": [
+        "/Metadata_Mapping/"
+      ]
+    },
+    {
+      "fields": [
+        "/Metadata_Mapping/perm_id/v"
+      ],
+      "mpName": [
+        "iborTypeMapping1"
+      ],
+      "mpPath": [
+        "/Metadata_Mapping/"
+      ]
+    },
+    {
+      "fields": [
+        "/Metadata_Mapping/value/v"
+      ],
+      "mpName": [
+        "contributorCountryMapping1"
+      ],
+      "mpPath": [
+        "/Metadata_Mapping/"
+      ]
+    },
+    {
+      "fields": [
+        "/Metadata_Mapping/perm_id/v"
+      ],
+      "mpName": [
+        "contributorCountryMapping0"
+      ],
+      "mpPath": [
+        "/Metadata_Mapping/"
+      ]
+    },
+    {
+      "fields": [
+        "/Metadata_Mapping/value/v"
+      ],
+      "mpName": [
+        "contributorTypeMapping0"
+      ],
+      "mpPath": [
+        "/Metadata_Mapping/"
+      ]
+    },
+    {
+      "fields": [
+        "/Metadata_Mapping/perm_id/v"
+      ],
+      "mpName": [
+        "contributorTypeMapping1"
+      ],
+      "mpPath": [
+        "/Metadata_Mapping/"
+      ]
+    },
+    {
+      "fields": [
+        "/Metadata_Mapping/perm_id/v"
+      ],
+      "mpName": [
+        "exchangeCountryMapping1"
+      ],
+      "mpPath": [
+        "/Metadata_Mapping/"
+      ]
+    },
+    {
+      "fields": [
+        "/Metadata_Mapping/value/v"
+      ],
+      "mpName": [
+        "exchangeCountryMapping0"
+      ],
+      "mpPath": [
+        "/Metadata_Mapping/"
+      ]
+    },
+    {
+      "fields": [
+        "/Metadata_Mapping/value/v"
+      ],
+      "mpName": [
+        "rateTypeMapping0"
+      ],
+      "mpPath": [
+        "/Metadata_Mapping/"
+      ]
+    },
+    {
+      "fields": [
+        "/Metadata_Mapping/value/v"
+      ],
+      "mpName": [
+        "curveSubTypeMapping1"
+      ],
+      "mpPath": [
+        "/Metadata_Mapping/"
+      ]
+    },
+    {
+      "fields": [
+        "/Metadata_Mapping/perm_id/v"
+      ],
+      "mpName": [
+        "rateTypeMapping1"
+      ],
+      "mpPath": [
+        "/Metadata_Mapping/"
+      ]
+    },
+    {
+      "fields": [
+        "/Metadata_Mapping/value/v"
+      ],
+      "mpName": [
+        "priceTypeMapping0"
+      ],
+      "mpPath": [
+        "/Metadata_Mapping/"
+      ]
+    },
+    {
+      "fields": [
+        "/Metadata_Mapping/perm_id/v"
+      ],
+      "mpName": [
+        "priceTypeMapping1"
+      ],
+      "mpPath": [
+        "/Metadata_Mapping/"
+      ]
+    },
+    {
+      "fields": [
+        "/Metadata_Mapping/perm_id/v"
+      ],
+      "mpName": [
+        "curveSubTypeMapping0"
+      ],
+      "mpPath": [
+        "/Metadata_Mapping/"
+      ]
+    }
+  ],
+  "FrequencyDescription": [
+    {
+      "fields": [
+        "/FrequencyDescription/Code/v"
+      ],
+      "mpName": [
+        "fd10"
+      ],
+      "mpPath": [
+        "/FrequencyDescription/"
+      ]
+    },
+    {
+      "fields": [
+        "/FrequencyDescription/Code/v"
+      ],
+      "mpName": [
+        "fd20"
+      ],
+      "mpPath": [
+        "/FrequencyDescription/"
+      ]
+    }
+  ],
+  "Metadata_Fanout": [
+    {
+      "fields": [
+        "/Metadata_Fanout/perm_id/v"
+      ],
+      "mpName": [
+        "rateTypeFanout0"
+      ],
+      "mpPath": [
+        "/Metadata_Fanout/"
+      ]
+    },
+    {
+      "fields": [
+        "/Metadata_Fanout/perm_id/v"
+      ],
+      "mpName": [
+        "contributorTypeFanout0"
+      ],
+      "mpPath": [
+        "/Metadata_Fanout/"
+      ]
+    },
+    {
+      "fields": [
+        "/Metadata_Fanout/perm_id/v"
+      ],
+      "mpName": [
+        "curveSubTypeFanout0"
+      ],
+      "mpPath": [
+        "/Metadata_Fanout/"
+      ]
+    },
+    {
+      "fields": [
+        "/Metadata_Fanout/perm_id/v"
+      ],
+      "mpName": [
+        "exchangeCountryFanout0"
+      ],
+      "mpPath": [
+        "/Metadata_Fanout/"
+      ]
+    },
+    {
+      "fields": [
+        "/Metadata_Fanout/perm_id/v"
+      ],
+      "mpName": [
+        "secondCurrencyFanout0"
+      ],
+      "mpPath": [
+        "/Metadata_Fanout/"
+      ]
+    },
+    {
+      "fields": [
+        "/Metadata_Fanout/perm_id/v"
+      ],
+      "mpName": [
+        "contributorCountryFanout0"
+      ],
+      "mpPath": [
+        "/Metadata_Fanout/"
+      ]
+    },
+    {
+      "fields": [
+        "/Metadata_Fanout/perm_id/v"
+      ],
+      "mpName": [
+        "firstCurrencyFanout0"
+      ],
+      "mpPath": [
+        "/Metadata_Fanout/"
+      ]
+    },
+    {
+      "fields": [
+        "/Metadata_Fanout/perm_id/v"
+      ],
+      "mpName": [
+        "priceTypeFanout0"
+      ],
+      "mpPath": [
+        "/Metadata_Fanout/"
+      ]
+    },
+    {
+      "fields": [
+        "/Metadata_Fanout/perm_id/v"
+      ],
+      "mpName": [
+        "tenorFanout0"
+      ],
+      "mpPath": [
+        "/Metadata_Fanout/"
+      ]
+    },
+    {
+      "fields": [
+        "/Metadata_Fanout/perm_id/v"
+      ],
+      "mpName": [
+        "assetClassFanout0"
+      ],
+      "mpPath": [
+        "/Metadata_Fanout/"
+      ]
+    },
+    {
+      "fields": [
+        "/Metadata_Fanout/perm_id/v"
+      ],
+      "mpName": [
+        "iborTypeFanout0"
+      ],
+      "mpPath": [
+        "/Metadata_Fanout/"
+      ]
+    }
+  ],
+  "Contributor": [
+    {
+      "fields": [
+        "/Contributor/DS_PriceSourceCode/v"
+      ],
+      "mpName": [
+        "contributor4"
+      ],
+      "mpPath": [
+        "/Contributor/"
+      ]
+    },
+    {
+      "fields": [
+        "/Contributor/DS_ExchangeCountryCode/v"
+      ],
+      "mpName": [
+        "contributor1"
+      ],
+      "mpPath": [
+        "/Contributor/"
+      ]
+    },
+    {
+      "fields": [
+        "/Contributor/DS_ContributorLocationCode/v"
+      ],
+      "mpName": [
+        "contributor0"
+      ],
+      "mpPath": [
+        "/Contributor/"
+      ]
+    },
+    {
+      "fields": [
+        "/Contributor/DS_ContributorCountryCode/v"
+      ],
+      "mpName": [
+        "contributor3"
+      ],
+      "mpPath": [
+        "/Contributor/"
+      ]
+    },
+    {
+      "fields": [
+        "/Contributor/DS_ContributorCommonName/v"
+      ],
+      "mpName": [
+        "contributor2"
+      ],
+      "mpPath": [
+        "/Contributor/"
+      ]
+    }
+  ],
+  "BankGuideMapping": [
+    {
+      "fields": [
+        "/BankGuideMapping/ContributorsName/v"
+      ],
+      "mpName": [
+        "bankGuide0"
+      ],
+      "mpPath": [
+        "/BankGuideMapping/"
+      ]
+    }
+  ]
 }

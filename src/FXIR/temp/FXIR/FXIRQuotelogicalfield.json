@@ -1,0 +1,137 @@
+{
+  "Relationship": [
+    {
+      "fields": [
+        "/Relationship/RelationObjectId/a/relatedObjectId"
+      ],
+      "mpName": [
+        "IsPrimaryQuoteOf0"
+      ],
+      "mpPath": [
+        "/Relationship/"
+      ]
+    },
+    {
+      "fields": [
+        "/Relationship/RelationObjectId/v"
+      ],
+      "mpName": [
+        "IsPrimaryQuoteOf1"
+      ],
+      "mpPath": [
+        "/Relationship/"
+      ]
+    },
+    {
+      "fields": [
+        "/Relationship/RelationObjectId/v"
+      ],
+      "mpName": [
+        "IsQuoteOf0"
+      ],
+      "mpPath": [
+        "/Relationship/"
+      ]
+    },
+    {
+      "fields": [
+        "/Relationship/RelationObjectId/a/relatedObjectId"
+      ],
+      "mpName": [
+        "IsPrimaryChainOf1"
+      ],
+      "mpPath": [
+        "/Relationship/"
+      ]
+    },
+    {
+      "fields": [
+        "/Relationship/RelationObjectId/a/relatedObjectId"
+      ],
+      "mpName": [
+        "IsQuoteOf1"
+      ],
+      "mpPath": [
+        "/Relationship/"
+      ]
+    },
+    {
+      "fields": [
+        "/Relationship/RelationObjectId/v"
+      ],
+      "mpName": [
+        "IsPrimaryChainOf0"
+      ],
+      "mpPath": [
+        "/Relationship/"
+      ]
+    },
+    {
+      "fields": [
+        "/Relationship/RelationObjectId/a/relatedObjectId"
+      ],
+      "mpName": [
+        "IsVehicleOf1"
+      ],
+      "mpPath": [
+        "/Relationship/"
+      ]
+    },
+    {
+      "fields": [
+        "/Relationship/RelationObjectId/v"
+      ],
+      "mpName": [
+        "IsVehicleOf0"
+      ],
+      "mpPath": [
+        "/Relationship/"
+      ]
+    },
+    {
+      "fields": [
+        "/Relationship/RelationObjectId/v"
+      ],
+      "mpName": [
+        "IsStructureOf0"
+      ],
+      "mpPath": [
+        "/Relationship/"
+      ]
+    },
+    {
+      "fields": [
+        "/Relationship/RelationObjectId/a/relatedObjectId"
+      ],
+      "mpName": [
+        "IsStructureOf1"
+      ],
+      "mpPath": [
+        "/Relationship/"
+      ]
+    },
+    {
+      "fields": [
+        "/Relationship/RelationObjectId/a/relatedObjectId"
+      ],
+      "mpName": [
+        "IsParentChainOf0"
+      ],
+      "mpPath": [
+        "/Relationship/"
+      ]
+    },
+    {
+      "fields": [
+        "/Relationship/RelationObjectId/v"
+      ],
+      "mpName": [
+        "IsParentChainOf1"
+      ],
+      "mpPath": [
+        "/Relationship/"
+      ]
+    }
+  ]
+
+}

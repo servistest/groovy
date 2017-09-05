@@ -132,100 +132,100 @@
         "vehicle.a.vehicleId": "PI"
     },
     "instancePath": {
-        "HasConstituents": "/FxirVehicle/vehicle0C3/Relationship/",
-        "HasContributedChains": "/FxirVehicle/vehicle0C1/Relationship/IsChainFor0/FxirStructure/structure2C6/Relationship/",
-        "HasInstruments": "/FxirVehicle/vehicle0C1/Relationship/IsChainFor0/FxirStructure/structure2C4/Relationship/",
-        "IsChainFor": "/FxirVehicle/vehicle0C1/Relationship/",
-        "IsPrimaryVehicleFor": "/FxirVehicle/vehicle0C2/Relationship/",
-        "assetClassFanout": "/FxirVehicle/vehicle0C1/Relationship/IsChainFor0/FxirStructure/structure4/Metadata_Fanout/",
-        "bankGuide": "/FxirVehicle/vehicle0C3/FxirChain/chain0/Contributor/contributor2/BankGuideMapping/",
-        "chain": "/FxirVehicle/vehicle0C3/FxirChain/",
-        "contrLoc": "/FxirVehicle/vehicle0C3/FxirChain/chain0/Contributor/contributor0/Identifier/contrLocCode1/TimeZone/",
-        "contrLocCode": "/FxirVehicle/vehicle0C3/FxirChain/chain0/Contributor/contributor0/Identifier/",
-        "contributor": "/FxirVehicle/vehicle0C3/FxirChain/chain0/Contributor/",
-        "contributorCountryFanout": "/FxirVehicle/vehicle0C3/FxirChain/chain0/Contributor/contributor3/Metadata_Mapping/contributorCountryMapping0/Metadata_Fanout/",
-        "contributorCountryMapping": "/FxirVehicle/vehicle0C3/FxirChain/chain0/Contributor/contributor3/Metadata_Mapping/",
-        "contributorTypeFanout": "/FxirVehicle/vehicle0C3/FxirChain/chain1/Metadata_Mapping/contributorTypeMapping1/Metadata_Fanout/",
-        "contributorTypeMapping": "/FxirVehicle/vehicle0C3/FxirChain/chain1/Metadata_Mapping/",
-        "curveSubTypeFanout": "/FxirVehicle/vehicle0C1/Relationship/IsChainFor0/FxirStructure/structure5/Metadata_Mapping/curveSubTypeMapping0/Metadata_Fanout/",
-        "curveSubTypeMapping": "/FxirVehicle/vehicle0C1/Relationship/IsChainFor0/FxirStructure/structure5/Metadata_Mapping/",
-        "exchangeCountryFanout": "/FxirVehicle/vehicle0C3/FxirChain/chain0/Contributor/contributor1/Metadata_Mapping/exchangeCountryMapping1/Metadata_Fanout/",
-        "exchangeCountryMapping": "/FxirVehicle/vehicle0C3/FxirChain/chain0/Contributor/contributor1/Metadata_Mapping/",
-        "fd1": "/FxirVehicle/vehicle0C1/Relationship/IsChainFor0/FxirStructure/structure2C4/FxirUnderlyingAttr/undlyLeg10/FrequencyDescription/",
-        "fd2": "/FxirVehicle/vehicle0C1/Relationship/IsChainFor0/FxirStructure/structure2C6/FxirUnderlyingAttr/undlyLeg20/FrequencyDescription/",
-        "firstCurrency": "/FxirVehicle/vehicle0C1/Relationship/IsChainFor0/FxirStructure/structure2C6/FxirStructure/structureForFirstCurrency0/Currency/",
-        "firstCurrencyExtIdentifier": "/FxirVehicle/vehicle0C1/Relationship/IsChainFor0/FxirStructure/structure2C6/FxirStructure/structureForFirstCurrency0/Currency/firstCurrency0C1/Identifier/",
-        "firstCurrencyFanout": "/FxirVehicle/vehicle0C1/Relationship/IsChainFor0/FxirStructure/structure2C6/FxirStructure/structureForFirstCurrency0/Metadata_Fanout/",
-        "firstCurrencyIdentifier": "/FxirVehicle/vehicle0C1/Relationship/IsChainFor0/FxirStructure/structure2C6/FxirStructure/structureForFirstCurrency0/Currency/firstCurrency0C0/Identifier/",
-        "iborTypeFanout": "/FxirVehicle/vehicle0C1/Relationship/IsChainFor0/FxirStructure/structure0/Metadata_Mapping/iborTypeMapping1/Metadata_Fanout/",
-        "iborTypeMapping": "/FxirVehicle/vehicle0C1/Relationship/IsChainFor0/FxirStructure/structure0/Metadata_Mapping/",
-        "priceTypeFanout": "/FxirVehicle/vehicle0C3/FxirChain/chain2/Metadata_Mapping/priceTypeMapping1/Metadata_Fanout/",
-        "priceTypeMapping": "/FxirVehicle/vehicle0C3/FxirChain/chain2/Metadata_Mapping/",
-        "rateTypeFanout": "/FxirVehicle/vehicle0C1/Relationship/IsChainFor0/FxirStructure/structure1/Metadata_Mapping/rateTypeMapping1/Metadata_Fanout/",
-        "rateTypeMapping": "/FxirVehicle/vehicle0C1/Relationship/IsChainFor0/FxirStructure/structure1/Metadata_Mapping/",
-        "ricIdentifier": "/FxirVehicle/vehicle0C2/Identifier/",
-        "ricRootIdentifier": "/FxirVehicle/vehicle0C3/Identifier/",
-        "secondCurrency": "/FxirVehicle/vehicle0C1/Relationship/IsChainFor0/FxirStructure/structure2C4/FxirStructure/structureForSecondCurrency0/Currency/",
-        "secondCurrencyExtIdentifier": "/FxirVehicle/vehicle0C1/Relationship/IsChainFor0/FxirStructure/structure2C4/FxirStructure/structureForSecondCurrency0/Currency/secondCurrency0C1/Identifier/",
-        "secondCurrencyFanout": "/FxirVehicle/vehicle0C1/Relationship/IsChainFor0/FxirStructure/structure2C4/FxirStructure/structureForSecondCurrency0/Metadata_Fanout/",
-        "secondCurrencyIdentifier": "/FxirVehicle/vehicle0C1/Relationship/IsChainFor0/FxirStructure/structure2C4/FxirStructure/structureForSecondCurrency0/Currency/secondCurrency0C0/Identifier/",
-        "structure": "/FxirVehicle/vehicle0C1/Relationship/IsChainFor0/FxirStructure/",
-        "structureForFirstCurrency": "/FxirVehicle/vehicle0C1/Relationship/IsChainFor0/FxirStructure/structure2C6/FxirStructure/",
-        "structureForPrimaryVehicle": "/FxirVehicle/vehicle0C2/Relationship/IsPrimaryVehicleFor0/FxirStructure/",
-        "structureForSecondCurrency": "/FxirVehicle/vehicle0C1/Relationship/IsChainFor0/FxirStructure/structure2C4/FxirStructure/",
-        "tenorFanout": "/FxirVehicle/vehicle0C1/Relationship/IsChainFor0/FxirStructure/structure3/Metadata_Fanout/",
-        "undlyLeg1": "/FxirVehicle/vehicle0C1/Relationship/IsChainFor0/FxirStructure/structure2C4/FxirUnderlyingAttr/",
-        "undlyLeg2": "/FxirVehicle/vehicle0C1/Relationship/IsChainFor0/FxirStructure/structure2C6/FxirUnderlyingAttr/",
+        "HasConstituents": "/FxirVehicle/parentChainVehicle0/Relationship/",
+        "HasContributedChains": "/FxirVehicle/vehicle0/Relationship/IsParentChainOf1/FxirStructure/structureForFirstCurrency0/Relationship/",
+        "HasInstruments": "/FxirVehicle/vehicle0/Relationship/IsParentChainOf1/FxirStructure/structure2C4/Relationship/",
+        "IsChainFor": "/FxirVehicle/vehicle0/Relationship/",
+        "IsPrimaryVehicleFor": "/FxirVehicle/vehicleQuote0/Relationship/",
+        "assetClassFanout": "/FxirVehicle/vehicle0/Relationship/IsParentChainOf1/FxirStructure/structure5/Metadata_Fanout/",
+        "bankGuide": "/FxirVehicle/parentChainVehicle0/FxirChain/chain0/Contributor/contributor2/BankGuideMapping/",
+        "chain": "/FxirVehicle/parentChainVehicle0/FxirChain/",
+        "contrLoc": "/FxirVehicle/parentChainVehicle0/FxirChain/chain0/Contributor/contributor0/Identifier/contrLocCode11/TimeZone/",
+        "contrLocCode": "/FxirVehicle/parentChainVehicle0/FxirChain/chain0/Contributor/contributor0/Identifier/",
+        "contributor": "/FxirVehicle/parentChainVehicle0/FxirChain/chain0/Contributor/",
+        "contributorCountryFanout": "/FxirVehicle/parentChainVehicle0/FxirChain/chain0/Contributor/contributor3/Metadata_Mapping/contributorCountryMapping0/Metadata_Fanout/",
+        "contributorCountryMapping": "/FxirVehicle/parentChainVehicle0/FxirChain/chain0/Contributor/contributor3/Metadata_Mapping/",
+        "contributorTypeFanout": "/FxirVehicle/parentChainVehicle0/FxirChain/chain1/Metadata_Mapping/contributorTypeMapping1/Metadata_Fanout/",
+        "contributorTypeMapping": "/FxirVehicle/parentChainVehicle0/FxirChain/chain1/Metadata_Mapping/",
+        "curveSubTypeFanout": "/FxirVehicle/vehicle0/Relationship/IsParentChainOf1/FxirStructure/structure4/Metadata_Mapping/curveSubTypeMapping0/Metadata_Fanout/",
+        "curveSubTypeMapping": "/FxirVehicle/vehicle0/Relationship/IsParentChainOf1/FxirStructure/structure4/Metadata_Mapping/",
+        "exchangeCountryFanout": "/FxirVehicle/parentChainVehicle0/FxirChain/chain0/Contributor/contributor1/Metadata_Mapping/exchangeCountryMapping1/Metadata_Fanout/",
+        "exchangeCountryMapping": "/FxirVehicle/parentChainVehicle0/FxirChain/chain0/Contributor/contributor1/Metadata_Mapping/",
+        "fd1": "/FxirVehicle/vehicle0/Relationship/IsParentChainOf1/FxirStructure/structure2C4/FxirUnderlyingAttr/undlyLeg10/FrequencyDescription/",
+        "fd2": "/FxirVehicle/vehicle0/Relationship/IsParentChainOf1/FxirStructure/structureForFirstCurrency0/FxirUnderlyingAttr/undlyLeg20/FrequencyDescription/",
+        "firstCurrency": "/FxirVehicle/vehicle0/Relationship/IsParentChainOf1/FxirStructure/structureForFirstCurrency0/FxirStructure/structureForFirstCurrency1/Currency/",
+        "firstCurrencyExtIdentifier": "/FxirVehicle/vehicle0/Relationship/IsParentChainOf1/FxirStructure/structureForFirstCurrency0/FxirStructure/structureForFirstCurrency1/Currency/firstCurrency0C1/Identifier/",
+        "firstCurrencyFanout": "/FxirVehicle/vehicle0/Relationship/IsParentChainOf1/FxirStructure/structureForFirstCurrency0/FxirStructure/structureForFirstCurrency1/Metadata_Fanout/",
+        "firstCurrencyIdentifier": "/FxirVehicle/vehicle0/Relationship/IsParentChainOf1/FxirStructure/structureForFirstCurrency0/FxirStructure/structureForFirstCurrency1/Currency/firstCurrency0C0/Identifier/",
+        "iborTypeFanout": "/FxirVehicle/vehicle0/Relationship/IsParentChainOf1/FxirStructure/structure1/Metadata_Mapping/iborTypeMapping1/Metadata_Fanout/",
+        "iborTypeMapping": "/FxirVehicle/vehicle0/Relationship/IsParentChainOf1/FxirStructure/structure1/Metadata_Mapping/",
+        "priceTypeFanout": "/FxirVehicle/parentChainVehicle0/FxirChain/chain2/Metadata_Mapping/priceTypeMapping1/Metadata_Fanout/",
+        "priceTypeMapping": "/FxirVehicle/parentChainVehicle0/FxirChain/chain2/Metadata_Mapping/",
+        "rateTypeFanout": "/FxirVehicle/vehicle0/Relationship/IsParentChainOf1/FxirStructure/structure1/Metadata_Mapping/rateTypeMapping1/Metadata_Fanout/",
+        "rateTypeMapping": "/FxirVehicle/vehicle0/Relationship/IsParentChainOf1/FxirStructure/structure1/Metadata_Mapping/",
+        "ricIdentifier": "/FxirVehicle/vehicleQuote0/Identifier/",
+        "ricRootIdentifier": "/FxirVehicle/parentChainVehicle0/Identifier/",
+        "secondCurrency": "/FxirVehicle/vehicle0/Relationship/IsParentChainOf1/FxirStructure/structure2C4/FxirStructure/structureForSecondCurrency0/Currency/",
+        "secondCurrencyExtIdentifier": "/FxirVehicle/vehicle0/Relationship/IsParentChainOf1/FxirStructure/structure2C4/FxirStructure/structureForSecondCurrency0/Currency/secondCurrency0C1/Identifier/",
+        "secondCurrencyFanout": "/FxirVehicle/vehicle0/Relationship/IsParentChainOf1/FxirStructure/structure2C4/FxirStructure/structureForSecondCurrency0/Metadata_Fanout/",
+        "secondCurrencyIdentifier": "/FxirVehicle/vehicle0/Relationship/IsParentChainOf1/FxirStructure/structure2C4/FxirStructure/structureForSecondCurrency0/Currency/secondCurrency0C0/Identifier/",
+        "structure": "/FxirVehicle/vehicle0/Relationship/IsParentChainOf1/FxirStructure/",
+        "structureForFirstCurrency": "/FxirVehicle/vehicle0/Relationship/IsParentChainOf1/FxirStructure/structureForFirstCurrency0/FxirStructure/",
+        "structureForPrimaryVehicle": "/FxirVehicle/vehicleQuote0/Relationship/IsQuoteOf0/FxirStructure/",
+        "structureForSecondCurrency": "/FxirVehicle/vehicle0/Relationship/IsParentChainOf1/FxirStructure/structure2C4/FxirStructure/",
+        "tenorFanout": "/FxirVehicle/vehicle0/Relationship/IsParentChainOf1/FxirStructure/structure2/Metadata_Fanout/",
+        "undlyLeg1": "/FxirVehicle/vehicle0/Relationship/IsParentChainOf1/FxirStructure/structure2C4/FxirUnderlyingAttr/",
+        "undlyLeg2": "/FxirVehicle/vehicle0/Relationship/IsParentChainOf1/FxirStructure/structureForFirstCurrency0/FxirUnderlyingAttr/",
         "vehicle": "/FxirVehicle/"
     },
     "links": [
         {
             "join": "left",
-            "srcKeyName": "vehicle0C3",
+            "srcKeyName": "parentChainVehicle0",
             "srcType": "vehicle",
-            "tarKeyName": "HasConstituents0",
+            "tarKeyName": "IsPrimaryChainOf0",
             "tarType": "HasConstituents"
         },
         {
             "join": "left",
-            "srcKeyName": "vehicle0C2",
+            "srcKeyName": "vehicleQuote0",
             "srcType": "vehicle",
-            "tarKeyName": "IsPrimaryVehicleFor1",
+            "tarKeyName": "IsPrimaryChainOf1",
             "tarType": "IsPrimaryVehicleFor"
         },
         {
             "join": "left",
-            "srcKeyName": "vehicle0C3",
+            "srcKeyName": "parentChainVehicle0",
             "srcType": "vehicle",
-            "tarKeyName": "ricRootIdentifier0",
+            "tarKeyName": "instrumentIdentifier0",
             "tarType": "ricRootIdentifier"
         },
         {
             "join": "left",
-            "srcKeyName": "vehicle0C2",
+            "srcKeyName": "vehicleQuote0",
             "srcType": "vehicle",
-            "tarKeyName": "ricIdentifier0",
+            "tarKeyName": "vehicleIdentifier0",
             "tarType": "ricIdentifier"
         },
         {
             "join": "inner",
-            "srcKeyName": "vehicle0C3",
+            "srcKeyName": "parentChainVehicle0",
             "srcType": "vehicle",
-            "tarKeyName": "chain3",
+            "tarKeyName": "vehicleChain0",
             "tarType": "chain"
         },
         {
             "join": "left",
-            "srcKeyName": "vehicle0C1",
+            "srcKeyName": "vehicle0",
             "srcType": "vehicle",
-            "tarKeyName": "IsChainFor1",
+            "tarKeyName": "IsQuoteOf1",
             "tarType": "IsChainFor"
         },
         {
             "join": "left",
-            "srcKeyName": "IsPrimaryVehicleFor0",
+            "srcKeyName": "IsQuoteOf0",
             "srcType": "IsPrimaryVehicleFor",
-            "tarKeyName": "structureForPrimaryVehicle0",
+            "tarKeyName": "structure3C3",
             "tarType": "structureForPrimaryVehicle"
         },
         {
@@ -251,9 +251,9 @@
         },
         {
             "join": "left",
-            "srcKeyName": "IsChainFor0",
+            "srcKeyName": "IsParentChainOf1",
             "srcType": "IsChainFor",
-            "tarKeyName": "structure2C5",
+            "tarKeyName": "structure3C2",
             "tarType": "structure"
         },
         {
@@ -281,7 +281,7 @@
             "join": "left",
             "srcKeyName": "contributor0",
             "srcType": "contributor",
-            "tarKeyName": "contrLocCode0",
+            "tarKeyName": "contrLocCode00",
             "tarType": "contrLocCode"
         },
         {
@@ -300,28 +300,28 @@
         },
         {
             "join": "left",
-            "srcKeyName": "structure2C6",
+            "srcKeyName": "structureForFirstCurrency0",
             "srcType": "structure",
-            "tarKeyName": "structureForFirstCurrency1",
+            "tarKeyName": "structureForFirstCurrency11",
             "tarType": "structureForFirstCurrency"
         },
         {
             "join": "left",
-            "srcKeyName": "structure2C6",
+            "srcKeyName": "structureForFirstCurrency0",
             "srcType": "structure",
             "tarKeyName": "undlyLeg20",
             "tarType": "undlyLeg2"
         },
         {
             "join": "left",
-            "srcKeyName": "structure2C6",
+            "srcKeyName": "structureForFirstCurrency0",
             "srcType": "structure",
-            "tarKeyName": "HasContributedChains0",
+            "tarKeyName": "IsVehicleOf1",
             "tarType": "HasContributedChains"
         },
         {
             "join": "left",
-            "srcKeyName": "structure0",
+            "srcKeyName": "structure1",
             "srcType": "structure",
             "tarKeyName": "iborTypeMapping0",
             "tarType": "iborTypeMapping"
@@ -330,12 +330,12 @@
             "join": "left",
             "srcKeyName": "structure2C4",
             "srcType": "structure",
-            "tarKeyName": "HasInstruments0",
+            "tarKeyName": "IsStructureOf1",
             "tarType": "HasInstruments"
         },
         {
             "join": "left",
-            "srcKeyName": "structure3",
+            "srcKeyName": "structure2",
             "srcType": "structure",
             "tarKeyName": "tenorFanout0",
             "tarType": "tenorFanout"
@@ -349,7 +349,7 @@
         },
         {
             "join": "left",
-            "srcKeyName": "structure5",
+            "srcKeyName": "structure4",
             "srcType": "structure",
             "tarKeyName": "curveSubTypeMapping1",
             "tarType": "curveSubTypeMapping"
@@ -363,14 +363,14 @@
         },
         {
             "join": "left",
-            "srcKeyName": "structure1",
+            "srcKeyName": "structure0",
             "srcType": "structure",
             "tarKeyName": "rateTypeMapping0",
             "tarType": "rateTypeMapping"
         },
         {
             "join": "left",
-            "srcKeyName": "structure4",
+            "srcKeyName": "structure5",
             "srcType": "structure",
             "tarKeyName": "assetClassFanout0",
             "tarType": "assetClassFanout"
@@ -384,7 +384,7 @@
         },
         {
             "join": "left",
-            "srcKeyName": "contrLocCode1",
+            "srcKeyName": "contrLocCode11",
             "srcType": "contrLocCode",
             "tarKeyName": "contrLoc0",
             "tarType": "contrLoc"
@@ -398,14 +398,14 @@
         },
         {
             "join": "left",
-            "srcKeyName": "structureForFirstCurrency0",
+            "srcKeyName": "structureForFirstCurrency1",
             "srcType": "structureForFirstCurrency",
             "tarKeyName": "firstCurrency0C0",
             "tarType": "firstCurrency"
         },
         {
             "join": "left",
-            "srcKeyName": "structureForFirstCurrency0",
+            "srcKeyName": "structureForFirstCurrency1",
             "srcType": "structureForFirstCurrency",
             "tarKeyName": "firstCurrencyFanout0",
             "tarType": "firstCurrencyFanout"
@@ -488,7 +488,7 @@
             "tarType": "secondCurrencyIdentifier"
         }
     ],
-    "name": "STIRChain_k",
+    "name": "STIRChain",
     "output": [],
     "overLoad": {
         "blacklist": [],

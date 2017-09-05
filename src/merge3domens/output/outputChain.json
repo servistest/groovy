@@ -1,0 +1,601 @@
+[{
+	"formatter": {
+		"className": "com.tr.search.search.SearchFormatter",
+		"filePath": "N/A",
+		"param": {
+			"IsNotNull": {
+				"HasInstruments": "HasInstruments",
+				"HasContributedChains": "HasContributedChains",
+				"HasConstituents": "HasConstituents"
+			},
+			"dicts": [],
+			"docid": ["vehicle.a.vehicleId"],
+			"dociddelimiter": "|",
+			"fanout": {
+				
+			},
+			"fanout-agg": {
+				
+			},
+			"mapper": {
+				"contributor.DS_ContributorCommonName.v": "ContributorCommonName",
+				"contributor.DS_ContributorLocationCode.v": "ContributorLocationCity",
+				"contributor.DS_ExchangeCode.v": "ExchangeCode",
+				"contributor.DS_ExchangeCountryCode.v": "ExchangeCountry",
+				"contributor.DS_ExchangeName.v": "ExchangeName",
+				"contributor.DS_IsExchangeTradable.v": "_IsExchangeTradable",
+				"chain.FxirChainContributorCode.v": "ContributorCode",
+				"chain.FxirChainContributorType.v": "ContributorType",
+				"chain.FxirChainLongDisplayName.v": "CommonName",
+				"chain.FxirChainPermissionableEntity.v": "PO",
+				"chain.FxirChainPriceSourceCode.v": "PriceSourceCode",
+				"chain.FxirChainPriceType.v": "PriceType",
+				"chain.FxirChainShortDisplayName.v": "ShortName",
+				"chain.FxirChainType.v": "ChainType",
+				"chain.FxirChainVehicleId.v": "BaseCurvePermId",
+				"structure.FxirStructAssetClassId.v": "RCSAssetClassId",
+				"structure.FxirStructCrossAttrs.FxirStructCrossAttr.FxirStructCrossAttrCrossRateDecimals.v": "CrossDecimalPointConvention",
+				"structure.FxirStructCrossAttrs.FxirStructCrossAttr.FxirStructCrossAttrSwapPointDecimals.v": "SwapDecimalPointConvention",
+				"structure.FxirStructCrossAttrs.FxirStructCrossAttr.FxirStructCrossAttrSwapPointScaling.v": "ScalingFactorConvention",
+				"structure.FxirStructCurrencies.FxirStructCurrency.FxirStructCurAttrs.FxirStructCurAttr.a.fxirStructCurAttrIsOffShore": "IsOffShoreStructure",
+				"structure.FxirStructCurveSubType.v": "CurveType",
+				"structure.FxirStructIborType.v": "IborFixingType",
+				"structure.FxirStructLongDisplayName.v": "StructureCommonName",
+				"structure.FxirStructMrkConventionFl.v": "IsConvention",
+				"structure.FxirStructNonDeliverableFl.v": "IsNonDeliverableStructure",
+				"structure.FxirStructRateType.v": "CurveRateType",
+				"structure.FxirStructTenorType.v": "StructTenorType",
+				"structure.FxirStructType.v": "FxirStructType",
+				"structure.a.fxirStructureId": "BaseStructurePermId",
+				"structureForPrimaryVehicle.a.fxirStructureId": "_IsPrimaryChain",
+				"vehicle.a.vehicleId": "PI",
+				"ricIdentifier.IdentifierValue.v": "RIC",
+				"ricRootIdentifier.IdentifierValue.v": "RicRoot",
+				"rateTypeFanout.english.v": "RCSCurveRateTypeLeaf",
+				"rateTypeFanout.multilanguages.v": "RCSCurveRateTypeLeafML",
+				"rateTypeFanout.qcode.v": "RCSCurveRateType",
+				"priceTypeFanout.chinese.v": "RCSPriceTypeLeafZh",
+				"priceTypeFanout.english.v": "RCSPriceTypeLeaf",
+				"priceTypeFanout.japanese.v": "RCSPriceTypeLeafJa",
+				"priceTypeFanout.multilanguages.v": "RCSPriceTypeLeafML",
+				"priceTypeFanout.qcode.v": "RCSPriceType",
+				"priceTypeFanout.qcode_genealogy.v": "RCSPriceTypeGenealogy",
+				"contributorTypeFanout.chinese.v": "RCSContributorTypeLeafZh",
+				"contributorTypeFanout.english.v": "RCSContributorTypeLeaf",
+				"contributorTypeFanout.japanese.v": "RCSContributorTypeLeafJa",
+				"contributorTypeFanout.multilanguages.v": "RCSContributorTypeLeafML",
+				"contributorTypeFanout.qcode.v": "RCSContributorType",
+				"contributorTypeFanout.qcode_genealogy.v": "RCSContributorTypeGenealogy",
+				"curveSubTypeFanout.english.v": "RCSCurveTypeLeaf",
+				"curveSubTypeFanout.english_genealogy.v": "RCSCurveTypeName",
+				"curveSubTypeFanout.multilanguage_genealogy.v": "RCSCurveTypeNameML",
+				"curveSubTypeFanout.multilanguages.v": "RCSCurveTypeLeafML",
+				"curveSubTypeFanout.qcode.v": "RCSCurveType",
+				"curveSubTypeFanout.qcode_genealogy.v": "RCSCurveTypeGenealogy",
+				"exchangeCountryFanout.english.v": "RCSExchangeCountryLeaf",
+				"exchangeCountryFanout.english_genealogy.v": "RCSExchangeCountryName",
+				"exchangeCountryFanout.multilanguage_genealogy.v": "RCSExchangeCountryNameML",
+				"exchangeCountryFanout.multilanguages.v": "RCSExchangeCountryLeafML",
+				"exchangeCountryFanout.qcode.v": "RCSExchangeCountry",
+				"exchangeCountryFanout.qcode_genealogy.v": "RCSExchangeCountryGenealogy",
+				"contributorCountryFanout.chinese.v": "RCSContributorLocationLeafZh",
+				"contributorCountryFanout.english.v": "RCSContributorLocationLeaf",
+				"contributorCountryFanout.english_genealogy.v": "RCSContributorLocationName",
+				"contributorCountryFanout.japanese.v": "RCSContributorLocationLeafJa",
+				"contributorCountryFanout.multilanguage_genealogy.v": "RCSContributorLocationNameML",
+				"contributorCountryFanout.multilanguages.v": "RCSContributorLocationLeafML",
+				"contributorCountryFanout.qcode.v": "RCSContributorLocation",
+				"contributorCountryFanout.qcode_genealogy.v": "RCSContributorLocationGenealogy",
+				"assetClassFanout.chinese.v": "RCSAssetCategoryLeafZhHans",
+				"assetClassFanout.chinese_genealogy.v": "RCSAssetCategoryNameZh",
+				"assetClassFanout.english.v": "RCSAssetCategoryLeaf",
+				"assetClassFanout.english_genealogy.v": "RCSAssetCategoryName",
+				"assetClassFanout.japanese.v": "RCSAssetCategoryLeafJaHani",
+				"assetClassFanout.japanese_genealogy.v": "RCSAssetCategoryNameJa",
+				"assetClassFanout.multilanguage_genealogy.v": "RCSAssetCategoryNameML",
+				"assetClassFanout.multilanguages.v": "RCSAssetCategoryLeafML",
+				"assetClassFanout.qcode.v": "RCSAssetCategory",
+				"assetClassFanout.qcode_genealogy.v": "RCSAssetCategoryGenealogy",
+				"iborTypeFanout.english.v": "RCSIborFixingTypeLeaf",
+				"iborTypeFanout.multilanguages.v": "RCSIborFixingTypeLeafML",
+				"iborTypeFanout.qcode.v": "RCSIborFixingType",
+				"tenorFanout.english.v": "RCSStructTenorLeaf",
+				"tenorFanout.english_genealogy.v": "RCSStructTenorName",
+				"tenorFanout.multilanguage_genealogy.v": "RCSStructTenorNameML",
+				"tenorFanout.multilanguages.v": "RCSStructTenorLeafML",
+				"tenorFanout.qcode.v": "RCSStructTenor",
+				"tenorFanout.qcode_genealogy.v": "RCSStructTenorGenealogy",
+				"tenorFanout.ranking.v": "RCSStructTenorRank",
+				"fd1.Description.v": "Leg1UnderlyingFrequency",
+				"fd2.Description.v": "Leg2UnderlyingFrequency",
+				"firstCurrency.a.currencyId": "FirstCurrencyPermId",
+				"firstCurrencyExtIdentifier.IdentifierValue.v": "FirstCurrencyISOExt",
+				"firstCurrencyFanout.chinese.v": "RCSFirstCurrencyLeafZh",
+				"firstCurrencyFanout.english.v": "RCSFirstCurrencyLeaf",
+				"firstCurrencyFanout.japanese.v": "RCSFirstCurrencyLeafJa",
+				"firstCurrencyFanout.multilanguages.v": "RCSFirstCurrencyLeafML",
+				"firstCurrencyFanout.qcode.v": "RCSFirstCurrency",
+				"firstCurrencyIdentifier.IdentifierValue.v": "FirstCurrencyISO",
+				"undlyLeg2.FxirUndlyCpnCalcMethod.v": "Leg2UnderlyingCpnCalcMethod",
+				"undlyLeg2.FxirUndlyIborType.v": "Leg2UnderlyingIborType",
+				"undlyLeg2.FxirUndlyType.v": "Leg2UnderlyingType",
+				"undlyLeg2.FxirUndlyUnderlyingRIC.v": "Leg2UnderlyingRIC",
+				"secondCurrencyExtIdentifier.IdentifierValue.v": "SecondCurrencyISOExt",
+				"secondCurrencyFanout.english.v": "RCSSecondCurrencyLeaf",
+				"secondCurrencyFanout.japanese.v": "RCSSecondCurrencyLeafJa",
+				"secondCurrencyFanout.chinese.v": "RCSSecondCurrencyLeafZh",
+				"secondCurrencyFanout.multilanguages.v": "RCSSecondCurrencyLeafML",
+				"secondCurrencyFanout.qcode.v": "RCSSecondCurrency",
+				"secondCurrencyIdentifier.IdentifierValue.v": "SecondCurrencyISO",
+				"undlyLeg1.FxirUndlyCpnCalcMethod.v": "Leg1UnderlyingCpnCalcMethod",
+				"undlyLeg1.FxirUndlyIborType.v": "Leg1UnderlyingIborType",
+				"undlyLeg1.FxirUndlyType.v": "Leg1UnderlyingType",
+				"undlyLeg1.FxirUndlyUnderlyingRIC.v": "Leg1UnderlyingRIC",
+				"contrLoc.TimeZoneUniqueName.v": "ContributorLocationCityName",
+				"bankGuide.BankGuideID.v": "BankGuideID"
+			},
+			"mapper-array": {
+				
+			},
+			"pipeline": {
+				"definition": {
+					"description": "this is a simple pipeline for srirs chain document processing",
+					"processors": [{
+						"set": {
+							"field": "BusinessEntity",
+							"value": "STIR"
+						}
+					},
+					{
+						"set": {
+							"field": "SearchTypeBase",
+							"value": 262144
+						}
+					},
+					{
+						"set": {
+							"field": "HasTimeSeries",
+							"value": true
+						}
+					},
+					{
+						"rules": {
+							"tag": "rules",
+							"target_field": "EntityTypeName",
+							"target_rule": "if(doc.FxirStructType==\'TILE\') \'Tile\';else \'Curve\';"
+						}
+					},
+					{
+						"rules": {
+							"tag": "rules",
+							"target_field": "EntityTypeCode",
+							"target_rule": "if(doc.FxirStructType==\'TILE\') 3;else 2;"
+						}
+					},
+					{
+						"set": {
+							"field": "IsChain",
+							"value": true
+						}
+					},
+					{
+						"rules": {
+							"tag": "rules",
+							"target_field": "FirstCurrency",
+							"target_rule": "CommonUDF.getFirst(doc.FirstCurrencyISO, doc.FirstCurrencyISOExt)"
+						}
+					},
+					{
+						"rules": {
+							"tag": "rules",
+							"target_field": "SecondCurrency",
+							"target_rule": "CommonUDF.getFirst(doc.SecondCurrencyISO, doc.SecondCurrencyISOExt)"
+						}
+					},
+					{
+						"rules": {
+							"tag": "rules",
+							"target_field": "IsPrimaryChain",
+							"target_rule": "CommonUDF.exists(doc._IsPrimaryChain)"
+						}
+					},
+					{
+						"remove": {
+							"field": "_IsPrimaryChain"
+						}
+					},
+					{
+						"rules": {
+							"tag": "rules",
+							"target_field": "IsExchangeTradable",
+							"target_rule": "if(doc._IsExchangeTradable==\'Y\') true;else false;"
+						}
+					},
+					{
+						"remove": {
+							"field": "_IsExchangeTradable"
+						}
+					},
+					{
+						"rules": {
+							"tag": "rules",
+							"target_field": "RCSTermStartLeaf",
+							"target_rule": "if(doc.StructTenorType!=\'FRAL\') doc.RCSStructTenorLeaf;"
+						}
+					},
+					{
+						"rules": {
+							"tag": "rules",
+							"target_field": "RCSTermStart",
+							"target_rule": "if(doc.StructTenorType!=\'FRAL\') doc.RCSStructTenor;"
+						}
+					},
+					{
+						"rules": {
+							"tag": "rules",
+							"target_field": "RCSTermMaturityName",
+							"target_rule": "if(doc.StructTenorType==\'FRAL\') doc.RCSStructTenorName;"
+						}
+					},
+					{
+						"rules": {
+							"tag": "rules",
+							"target_field": "RCSTermMaturityLeafML",
+							"target_rule": "if(doc.StructTenorType==\'FRAL\') doc.RCSStructTenorLeafML;"
+						}
+					},
+					{
+						"rules": {
+							"tag": "rules",
+							"target_field": "RCSTermStartLeafML",
+							"target_rule": "if(doc.StructTenorType!=\'FRAT\') doc.RCSStructTenorLeafML;"
+						}
+					},
+					{
+						"rules": {
+							"tag": "rules",
+							"target_field": "RCSTermMaturityLeaf",
+							"target_rule": "if(doc.StructTenorType==\'FRAL\') doc.RCSStructTenorLeaf;"
+						}
+					},
+					{
+						"rules": {
+							"tag": "rules",
+							"target_field": "RCSTermMaturityGenealogy",
+							"target_rule": "if(doc.StructTenorType==\'FRAL\') doc.RCSStructTenorGenealogy;"
+						}
+					},
+					{
+						"rules": {
+							"tag": "rules",
+							"target_field": "RCSTermMaturity",
+							"target_rule": "if(doc.StructTenorType==\'FRAL\') doc.RCSStructTenor;"
+						}
+					},
+					{
+						"rules": {
+							"tag": "rules",
+							"target_field": "RCSTermMaturityNameML",
+							"target_rule": "if(doc.StructTenorType==\'FRAL\') doc.RCSStructTenorNameML;"
+						}
+					},
+					{
+						"rules": {
+							"tag": "rules",
+							"target_field": "PermID",
+							"target_rule": "doc.PI"
+						}
+					},
+					{
+						"substring": {
+							"field": "RCSContributorType",
+							"tag": "copy process",
+							"target_field": "RCSSourceType"
+						}
+					},					
+					{
+						"substring": {
+							"field": "RCSContributorTypeLeafML",
+							"tag": "copy process",
+							"target_field": "RCSSourceTypeLeafML"
+						}
+					},
+					{
+						"substring": {
+							"field": "RCSContributorTypeGenealogy",
+							"tag": "copy process",
+							"target_field": "RCSSourceTypeGenealogy"
+						}
+					},
+					{
+						"substring": {
+							"field": "RCSContributorTypeLeaf",
+							"tag": "copy process",
+							"target_field": "RCSSourceTypeLeaf"
+						}
+					},
+					{
+						"substring": {
+							"field": "RCSPriceType",
+							"tag": "copy process",
+							"target_field": "RCSQuoteType"
+						}
+					},					
+					{
+						"substring": {
+							"field": "RCSPriceTypeGenealogy",
+							"tag": "copy process",
+							"target_field": "RCSQuoteTypeGenealogy"
+						}
+					},
+					{
+						"substring": {
+							"field": "RCSPriceTypeLeaf",
+							"tag": "copy process",
+							"target_field": "RCSQuoteTypeLeaf"
+						}
+					},
+					{
+						"substring": {
+							"field": "RCSPriceTypeLeafML",
+							"tag": "copy process",
+							"target_field": "RCSQuoteTypeLeafML"
+						}
+					},
+					{
+						"rules": {
+							"dependency": "doc.ContributorLocationCityName!=null && doc.ContributorLocationCityName.contains(\'__\')",
+							"tag": "rules",
+							"target_field": "ContributorLocationCityName",
+							"target_rule": "doc.ContributorLocationCityName.split(\'__\')[1]"
+						}
+					},
+					{
+						"rules": {
+							"tag": "rules",
+							"target_field": "ConcatCcyCode",
+							"target_rule": "if(doc.FirstCurrency!=null && doc.SecondCurrency!=null && doc.FirstCurrency != \'\' && doc.SecondCurrency != \'\') doc.FirstCurrency + doc.SecondCurrency + \' \' + doc.SecondCurrency + doc.FirstCurrency;"
+						}
+					},
+					{
+						"rules": {
+							"tag": "rules",
+							"target_field": "IsOffShoreStructure",
+							"target_rule": "doc.IsOffShoreStructure == 1;"
+						}
+					},
+					{
+						"rules": {
+							"dependency": "StirsUDF.isTermMaturity(doc.TenorType)",
+							"tag": "rules",
+							"target_field": "RCSTermMaturityRank",
+							"target_rule": "if(doc.RCSInstrTenorRank != null && doc.RCSInstrTenorRank != \'\') doc.RCSInstrTenorRank; else \'9999\'"
+						}
+					},
+					{
+						"rules": {
+							"dependency": "!StirsUDF.isTermMaturity(doc.TenorType)",
+							"tag": "rules",
+							"target_field": "RCSTermMaturityRank",
+							"target_rule": "if(doc.RCSStructTenorRank != null && doc.RCSStructTenorRank != \'\') doc.RCSStructTenorRank; else \'9999\'"
+						}
+					},
+					{
+						"rules": {
+							"dependency": "!StirsUDF.isTermMaturity(doc.TenorType)",
+							"tag": "rules",
+							"target_field": "RCSTermStartRank",
+							"target_rule": "if(doc.RCSInstrTenorRank != null && doc.RCSInstrTenorRank != \'\') doc.RCSInstrTenorRank; else \'9999\'"
+						}
+					},
+					{
+						"rules": {
+							"dependency": "StirsUDF.isTermMaturity(doc.TenorType)",
+							"tag": "rules",
+							"target_field": "RCSTermStartRank",
+							"target_rule": "if(doc.RCSStructTenorRank != null && doc.RCSStructTenorRank != \'\') doc.RCSStructTenorRank; else \'9999\'"
+						}
+					},
+					{
+						"rules": {
+							"tag": "rules",
+							"target_field": "RCSPrimaryCurrency",
+							"target_rule": "if(doc.RCSFirstCurrency != null && doc.RCSFirstCurrency != \'\' && doc.RCSFirstCurrency != \'C:6\') doc.RCSFirstCurrency + \'\';"
+						}
+					},
+					{
+						"rules": {
+							"tag": "rules",
+							"target_field": "RCSPrimaryCurrencyValue",
+							"target_rule": "if(doc.RCSFirstCurrency != null && doc.RCSFirstCurrency != \'\' && doc.RCSFirstCurrency != \'C:6\') (doc.RCSFirstCurrency + \'\').substring(2);"
+						}
+					},
+					{
+						"rules": {
+							"dependency": "!CommonUDF.exists(doc.RCSPrimaryCurrency)",
+							"tag": "rules",
+							"target_field": "RCSPrimaryCurrency",
+							"target_rule": "if(doc.RCSSecondCurrency != null && doc.RCSSecondCurrency != \'\' && doc.RCSSecondCurrency != \'C:6\') doc.RCSSecondCurrency + \'\';"
+						}
+					},
+					{
+						"rules": {
+							"dependency": "!CommonUDF.exists(doc.RCSPrimaryCurrencyValue)",
+							"tag": "rules",
+							"target_field": "RCSPrimaryCurrencyValue",
+							"target_rule": "if(doc.RCSSecondCurrency != null && doc.RCSSecondCurrency != \'\' && doc.RCSSecondCurrency != \'C:6\') (doc.RCSSecondCurrency + \'\').substring(2);"
+						}
+					},
+					{
+						"rules": {
+							"tag": "rules",
+							"target_field": "SB",
+							"target_rule": "StringJoin.nonEmpty(\' \', doc.FirstCurrency, doc.SecondCurrency)"
+						}
+					},
+					{
+						"rules": {
+							"tag": "rules",
+							"target_field": "SB",
+							"target_rule": "if(doc.RCSAssetCategoryGenealogy != null && doc.RCSAssetCategoryGenealogy.contains(\'I:13\')) doc.SB + \' Fixing\'; else doc.SB;"
+						}
+					},
+					{
+						"rules": {
+							"tag": "rules",
+							"target_field": "SubjectBoost",
+							"target_rule": "if (doc.RIC != null && doc.RIC == \'GBP=\') doc.SB + \' Cable\'; else doc.SB"
+						}
+					},
+					{
+						"rules": {
+							"tag": "rules",
+							"target_field": "SearchAllCategory",
+							"target_rule": "if(doc.RCSAssetCategoryGenealogy != null && doc.RCSAssetCategoryGenealogy.contains(\'A:2W\')) \'OTC Interest Rate Derivatives\'; else if(doc.RCSAssetCategoryGenealogy != null && doc.RCSAssetCategoryGenealogy.contains(\'A:2C\')) \'Bond Repos\'; else \'FX & Money\'"
+						}
+					},
+					{
+						"rules": {
+							"tag": "rules",
+							"target_field": "SearchAllCategoryv2",
+							"target_rule": "doc.SearchAllCategory"
+						}
+					},
+					{
+						"rules": {
+							"tag": "rules",
+							"target_field": "SearchAllCategoryv3",
+							"target_rule": "doc.SearchAllCategory"
+						}
+					},
+					{
+						"rules": {
+							"tag": "rules",
+							"target_field": "POPBase",
+							"target_rule": "if (doc.PO != null) doc.PO; else 9999"
+						}
+					},
+					{
+						"rules": {
+							"dependency": "CommonUDF.exists(doc.IsNonDeliverableStructure)",
+							"tag": "rules",
+							"target_field": "IsNonDeliverableStructure",
+							"target_rule": "if (doc.IsNonDeliverableStructure == 1) true; else false;"
+						}
+					},
+					{
+						"rules": {
+							"dependency": "CommonUDF.exists(doc.IsConvention)",
+							"tag": "rules",
+							"target_field": "IsConvention",
+							"target_rule": "if (doc.IsConvention == 1) true; else false;"
+						}
+					},
+					{
+						"rules": {
+							"tag": "rules",
+							"target_field": "CodeResolutionBase",
+							"target_rule": "StringJoin.nonEmpty(\' \', doc.RIC, doc.PermID)"
+						}
+					},
+					{
+						"rules": {
+							"tag": "rules",
+							"target_field": "RICFilter",
+							"target_rule": "StirsUDF.ricFilter(doc.RIC)"
+						}
+					},						
+					{
+						"document_title": {
+							"asset_category": "CHAIN",
+							"asset_types": ["STIR"],
+							"config_root": "/project/catforsearch/config",
+							"config_type": "hdfs",
+							"tag": "document_title"
+						}
+					},
+					{
+						"composites": {
+							"asset_types": ["STIR"],
+							"config_root": "/project/catforsearch/config",
+							"config_type": "hdfs",
+							"tag": "composites"
+						}
+					},
+					{
+						"synonyms": {
+							"asset_types": ["STIR"],
+							"config_root": "/project/catforsearch/config",
+							"config_type": "hdfs",
+							"tag": "synonyms"
+						}
+					},
+					{
+						"x1x": {
+							"asset_types": ["STIR"],
+							"config_root": "/project/catforsearch/config",
+							"config_type": "hdfs",
+							"tag": "x1x"
+						}
+					},
+					{
+						"petype": {
+							"config_root": "/project/catforsearch/config",
+							"config_type": "hdfs",
+							"tag": "petype"
+						}
+					},
+					{
+						"ricusage": {
+							"config_root": "/project/catforsearch/config",
+							"config_type": "hdfs",
+							"tag": "ricusage"
+						}
+					},
+					{
+						"staticrank": {
+							"config_root": "/project/catforsearch/config",
+							"config_type": "hdfs",
+							"ignore_failure": true,
+							"tag": "staticrank"
+						}
+					}],
+					"version": "1"
+				},
+				"plugins": [{
+					"classname": "com.tr.pipeline.plugin.IngestSearchPlugin",
+					"description": "plugin that holds search specific processors",
+					"extraJarPath": "reserved",
+					"version": "1.0"
+				}]
+			},
+			"filter": "!(.PEType in [\"BRS\", \"GTW\", \"INH\", \"PRO\"]) && .RICFilter != \"Y\""
+		}
+	},
+	"writer": [{
+		"param": {
+			"cluster": "ap-alpha-search",
+			"enable-version": "false",
+			"es-nodes": "10.206.148.21",
+			"es-resource": "fxir_chain_03_flat/stir",
+			"es-retrylimit": "9",
+			"es-retrywait": "120s",
+			"es-settings": {
+				"description": "type <resource|hdfs>",
+				"name": "stir2.json",
+				"path": "/project/catforsearch/config/elasticsearch",
+				"type": "hdfs"
+			},
+			"es-sleep": "500",
+			"hadoopConfig": "/project/catforsearch/conf/hbase-site.xml",
+			"metadataStore": {
+				"columnFamily": "cf",
+				"kafkaBroker": "10.235.8.191:9092,10.52.200.237:9092,10.52.201.200:9092",
+				"kafkaTopic": "searchderivedstore",
+				"storageType": "elastic",
+				"tableName": "catforsearch:merge_MetadataStore"
+			}
+		},
+		"writerType": "com.tr.output.elasticsearch.EsWriter"
+	}]
+}]

@@ -1,0 +1,140 @@
+<env:Data>
+<Metadata_Fanout>
+    <perm_id>100001</perm_id>
+    <qcode>G:1T</qcode>
+    <view>404302</view>
+    <fanout_type>Long</fanout_type>
+    <english>Abu Dhabi</english>
+    <multilanguages>ja アブダビ|zh-Hans 阿布扎比</multilanguages>
+    <japanese>アブダビ</japanese>
+    <chinese>阿布扎比</chinese>
+    <perm_id_genealogy>100001</perm_id_genealogy>
+    <qcode_genealogy>G:1T</qcode_genealogy>
+    <english_genealogy>Abu Dhabi</english_genealogy>
+    <japanese_genealogy>ja アブダビ</japanese_genealogy>
+    <chinese_genealogy>zh-Hans 阿布扎比</chinese_genealogy>
+    <multilanguage_genealogy>ja アブダビ|zh-Hans 阿布扎比</multilanguage_genealogy>
+    <ranking>null</ranking>
+    <instanceOrder></instanceOrder>
+</Metadata_Fanout>
+<Metadata_Fanout>
+<perm_id>100001</perm_id>
+<qcode>G:1T</qcode>
+<view>404303</view>
+<fanout_type>Long</fanout_type>
+<english>Abu Dhabi</english>
+<multilanguages>ja アブダビ|zh-Hans 阿布扎比</multilanguages>
+<japanese>アブダビ</japanese>
+<chinese>阿布扎比</chinese>
+<perm_id_genealogy>
+    1001046675\113548\103380\100316\100001|1001046675\103395\113530\113557\103380\100316\100001|1001046691\1000471167\100316\100001|1001046691\113553\100316\100001|1001046689\100316\100001|1001046691\111660\100316\100001|1001046691\113547\100316\100001|1001046691\1000475155\100316\100001|1001046691\113682\100316\100001|113683\100316\100001|1000318051\1000475141\1000475149\100316\100001
+</perm_id_genealogy>
+<qcode_genealogy>
+    M:DH\G:Q\G:F\G:A4\G:1T|M:DH\G:K\G:S\G:H\G:F\G:A4\G:1T|M:DQ\G:C4\G:A4\G:1T|M:DQ\G:BB\G:A4\G:1T|M:A9\G:A4\G:1T|M:DQ\G:AT\G:A4\G:1T|M:DQ\G:BA\G:A4\G:1T|M:DQ\G:3UF\G:A4\G:1T|M:DQ\G:C3\G:A4\G:1T|G:A4\G:1T|M:1M2\G:3U8\G:3UC\G:A4\G:1T
+</qcode_genealogy>
+<english_genealogy>
+    Continent / Region\Middle East\Gulf\United Arab Emirates\Abu Dhabi|Continent / Region\Asia / Pacific\Asia\South-West Asia\Gulf\United Arab Emirates\Abu Dhabi|Country Grouping\MENA\United Arab Emirates\Abu Dhabi|Country Grouping\OIC\United Arab Emirates\Abu Dhabi|Country\United Arab Emirates\Abu Dhabi|Country Grouping\OPEC\United Arab Emirates\Abu Dhabi|Country Grouping\MENASA\United Arab Emirates\Abu Dhabi|Country Grouping\CEEMEA\United Arab Emirates\Abu Dhabi|Country Grouping\GCC\United Arab Emirates\Abu Dhabi|Middle East and North Africa\United Arab Emirates\Abu Dhabi|FRUC Regions\Global\Middle East\United Arab Emirates\Abu Dhabi
+</english_genealogy>
+<japanese_genealogy>
+    ja 大陸 / 地域\中東\ペルシャ湾\アラブ首長国連邦\アブダビ|ja 大陸 / 地域\アジア太平洋\アジア\西南アジア\ペルシャ湾\アラブ首長国連邦\アブダビ|ja 国際機関\MENA 諸国\アラブ首長国連邦\アブダビ|ja 国際機関\\アラブ首長国連邦\アブダビ|ja 国\アラブ首長国連邦\アブダビ|ja 国際機関\OPEC 加盟国\アラブ首長国連邦\アブダビ|ja 国際機関\\アラブ首長国連邦\アブダビ|ja 国際機関\中欧・東欧・中東・アフリカ\アラブ首長国連邦\アブダビ|ja 国際機関\\アラブ首長国連邦\アブダビ|ja \アラブ首長国連邦\アブダビ|ja FRUC 地域\グローバル\中東\アラブ首長国連邦\アブダビ
+</japanese_genealogy>
+<chinese_genealogy>
+    zh-Hans 大陆/地区\中东\海湾\阿拉伯联合酋长国\阿布扎比|zh-Hans 大陆/地区\亚太\亚洲\西南亚\海湾\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\MENA 国家\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\伊斯兰会议组织\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家/地区\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\欧佩克\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\中东、北非、南亚\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\\阿拉伯联合酋长国\阿布扎比|zh-Hans \阿拉伯联合酋长国\阿布扎比|zh-Hans FRUC 区域\全球\中东\阿拉伯联合酋长国\阿布扎比
+</chinese_genealogy>
+<multilanguage_genealogy>
+    ja 大陸 / 地域\中東\ペルシャ湾\アラブ首長国連邦\アブダビ|ja 大陸 / 地域\アジア太平洋\アジア\西南アジア\ペルシャ湾\アラブ首長国連邦\アブダビ|ja 国際機関\MENA 諸国\アラブ首長国連邦\アブダビ|ja 国際機関\\アラブ首長国連邦\アブダビ|ja 国\アラブ首長国連邦\アブダビ|ja 国際機関\OPEC 加盟国\アラブ首長国連邦\アブダビ|ja 国際機関\\アラブ首長国連邦\アブダビ|ja 国際機関\中欧・東欧・中東・アフリカ\アラブ首長国連邦\アブダビ|ja 国際機関\\アラブ首長国連邦\アブダビ|ja \アラブ首長国連邦\アブダビ|ja FRUC 地域\グローバル\中東\アラブ首長国連邦\アブダビ|zh-Hans 大陆/地区\中东\海湾\阿拉伯联合酋长国\阿布扎比|zh-Hans 大陆/地区\亚太\亚洲\西南亚\海湾\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\MENA 国家\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\伊斯兰会议组织\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家/地区\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\欧佩克\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\中东、北非、南亚\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\\阿拉伯联合酋长国\阿布扎比|zh-Hans \阿拉伯联合酋长国\阿布扎比|zh-Hans FRUC 区域\全球\中东\阿拉伯联合酋长国\阿布扎比
+</multilanguage_genealogy>
+<ranking>1|1|1|1|1|1|1|1|1|1|1</ranking>
+<instanceOrder></instanceOrder>
+</Metadata_Fanout>
+<Metadata_Fanout>
+<perm_id>100001</perm_id>
+<qcode>G:1T</qcode>
+<view>404304</view>
+<fanout_type>Long</fanout_type>
+<english>Abu Dhabi</english>
+<multilanguages>ja アブダビ|zh-Hans 阿布扎比</multilanguages>
+<japanese>アブダビ</japanese>
+<chinese>阿布扎比</chinese>
+<perm_id_genealogy>
+    1001046675\1000474832\1000474838\100316\100001|1001046691\1000471167\100316\100001|1001046691\113553\100316\100001|1001046689\100316\100001|1001046691\111660\100316\100001|1001046691\113547\100316\100001|1001046691\1000475155\100316\100001|1001046691\113682\100316\100001|113683\100316\100001
+</perm_id_genealogy>
+<qcode_genealogy>
+    M:DH\G:BR\G:BU\G:A4\G:1T|M:DQ\G:C4\G:A4\G:1T|M:DQ\G:BB\G:A4\G:1T|M:A9\G:A4\G:1T|M:DQ\G:AT\G:A4\G:1T|M:DQ\G:BA\G:A4\G:1T|M:DQ\G:3UF\G:A4\G:1T|M:DQ\G:C3\G:A4\G:1T|G:A4\G:1T
+</qcode_genealogy>
+<english_genealogy>
+    Continent / Region\Europe / Middle East / Africa\Middle East\United Arab Emirates\Abu Dhabi|Country Grouping\MENA\United Arab Emirates\Abu Dhabi|Country Grouping\OIC\United Arab Emirates\Abu Dhabi|Country\United Arab Emirates\Abu Dhabi|Country Grouping\OPEC\United Arab Emirates\Abu Dhabi|Country Grouping\MENASA\United Arab Emirates\Abu Dhabi|Country Grouping\CEEMEA\United Arab Emirates\Abu Dhabi|Country Grouping\GCC\United Arab Emirates\Abu Dhabi|Middle East and North Africa\United Arab Emirates\Abu Dhabi
+</english_genealogy>
+<japanese_genealogy>
+    ja 大陸 / 地域\欧州 / 中東 / アフリカ\中東\アラブ首長国連邦\アブダビ|ja 国際機関\MENA 諸国\アラブ首長国連邦\アブダビ|ja 国際機関\\アラブ首長国連邦\アブダビ|ja 国\アラブ首長国連邦\アブダビ|ja 国際機関\OPEC 加盟国\アラブ首長国連邦\アブダビ|ja 国際機関\\アラブ首長国連邦\アブダビ|ja 国際機関\中欧・東欧・中東・アフリカ\アラブ首長国連邦\アブダビ|ja 国際機関\\アラブ首長国連邦\アブダビ|ja \アラブ首長国連邦\アブダビ
+</japanese_genealogy>
+<chinese_genealogy>
+    zh-Hans 大陆/地区\欧洲/中东/非洲\中东\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\MENA 国家\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\伊斯兰会议组织\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家/地区\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\欧佩克\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\中东、北非、南亚\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\\阿拉伯联合酋长国\阿布扎比|zh-Hans \阿拉伯联合酋长国\阿布扎比
+</chinese_genealogy>
+<multilanguage_genealogy>
+    ja 大陸 / 地域\欧州 / 中東 / アフリカ\中東\アラブ首長国連邦\アブダビ|ja 国際機関\MENA 諸国\アラブ首長国連邦\アブダビ|ja 国際機関\\アラブ首長国連邦\アブダビ|ja 国\アラブ首長国連邦\アブダビ|ja 国際機関\OPEC 加盟国\アラブ首長国連邦\アブダビ|ja 国際機関\\アラブ首長国連邦\アブダビ|ja 国際機関\中欧・東欧・中東・アフリカ\アラブ首長国連邦\アブダビ|ja 国際機関\\アラブ首長国連邦\アブダビ|ja \アラブ首長国連邦\アブダビ|zh-Hans 大陆/地区\欧洲/中东/非洲\中东\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\MENA 国家\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\伊斯兰会议组织\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家/地区\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\欧佩克\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\中东、北非、南亚\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\\阿拉伯联合酋长国\阿布扎比|zh-Hans \阿拉伯联合酋长国\阿布扎比
+</multilanguage_genealogy>
+<ranking>1|1|1|1|1|1|1|1|1</ranking>
+<instanceOrder></instanceOrder>
+</Metadata_Fanout>
+<Metadata_Fanout>
+<perm_id>100001</perm_id>
+<qcode>G:1T</qcode>
+<view>404305</view>
+<fanout_type>Long</fanout_type>
+<english>Abu Dhabi</english>
+<multilanguages>ja アブダビ|zh-Hans 阿布扎比</multilanguages>
+<japanese>アブダビ</japanese>
+<chinese>阿布扎比</chinese>
+<perm_id_genealogy>
+    1001046691\1000471167\100316\100001|1001046691\113553\100316\100001|1001046689\100316\100001|1001046691\111660\100316\100001|1001046691\113547\100316\100001|1001046691\1000475155\100316\100001|1001097668\1000475107\100316\100001|1001046691\113682\100316\100001|113683\100316\100001|1001046675\1000475109\100316\100001
+</perm_id_genealogy>
+<qcode_genealogy>
+    M:DQ\G:C4\G:A4\G:1T|M:DQ\G:BB\G:A4\G:1T|M:A9\G:A4\G:1T|M:DQ\G:AT\G:A4\G:1T|M:DQ\G:BA\G:A4\G:1T|M:DQ\G:3UF\G:A4\G:1T|M:1G8\G:BD\G:A4\G:1T|M:DQ\G:C3\G:A4\G:1T|G:A4\G:1T|M:DH\G:BE\G:A4\G:1T
+</qcode_genealogy>
+<english_genealogy>
+    Country Grouping\MENA\United Arab Emirates\Abu Dhabi|Country Grouping\OIC\United Arab Emirates\Abu Dhabi|Country\United Arab Emirates\Abu Dhabi|Country Grouping\OPEC\United Arab Emirates\Abu Dhabi|Country Grouping\MENASA\United Arab Emirates\Abu Dhabi|Country Grouping\CEEMEA\United Arab Emirates\Abu Dhabi|Commodities Short-Term Energy Outlook Geography\OPEC\United Arab Emirates\Abu Dhabi|Country Grouping\GCC\United Arab Emirates\Abu Dhabi|Middle East and North Africa\United Arab Emirates\Abu Dhabi|Continent / Region\Asia\United Arab Emirates\Abu Dhabi
+</english_genealogy>
+<japanese_genealogy>
+    ja 国際機関\MENA 諸国\アラブ首長国連邦\アブダビ|ja 国際機関\\アラブ首長国連邦\アブダビ|ja 国\アラブ首長国連邦\アブダビ|ja 国際機関\OPEC 加盟国\アラブ首長国連邦\アブダビ|ja 国際機関\\アラブ首長国連邦\アブダビ|ja 国際機関\中欧・東欧・中東・アフリカ\アラブ首長国連邦\アブダビ|ja 商品短期エネルギー事業アウトルック地域\\アラブ首長国連邦\アブダビ|ja 国際機関\\アラブ首長国連邦\アブダビ|ja \アラブ首長国連邦\アブダビ|ja 大陸 / 地域\アジア\アラブ首長国連邦\アブダビ
+</japanese_genealogy>
+<chinese_genealogy>
+    zh-Hans 国家分组\MENA 国家\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\伊斯兰会议组织\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家/地区\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\欧佩克\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\中东、北非、南亚\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\\阿拉伯联合酋长国\阿布扎比|zh-Hans 大宗商品短期能源前景地理区域\欧佩克\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\\阿拉伯联合酋长国\阿布扎比|zh-Hans \阿拉伯联合酋长国\阿布扎比|zh-Hans 大陆/地区\亚洲\阿拉伯联合酋长国\阿布扎比
+</chinese_genealogy>
+<multilanguage_genealogy>
+    ja 国際機関\MENA 諸国\アラブ首長国連邦\アブダビ|ja 国際機関\\アラブ首長国連邦\アブダビ|ja 国\アラブ首長国連邦\アブダビ|ja 国際機関\OPEC 加盟国\アラブ首長国連邦\アブダビ|ja 国際機関\\アラブ首長国連邦\アブダビ|ja 国際機関\中欧・東欧・中東・アフリカ\アラブ首長国連邦\アブダビ|ja 商品短期エネルギー事業アウトルック地域\\アラブ首長国連邦\アブダビ|ja 国際機関\\アラブ首長国連邦\アブダビ|ja \アラブ首長国連邦\アブダビ|ja 大陸 / 地域\アジア\アラブ首長国連邦\アブダビ|zh-Hans 国家分组\MENA 国家\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\伊斯兰会议组织\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家/地区\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\欧佩克\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\中东、北非、南亚\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\\阿拉伯联合酋长国\阿布扎比|zh-Hans 大宗商品短期能源前景地理区域\欧佩克\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\\阿拉伯联合酋长国\阿布扎比|zh-Hans \阿拉伯联合酋长国\阿布扎比|zh-Hans 大陆/地区\亚洲\阿拉伯联合酋长国\阿布扎比
+</multilanguage_genealogy>
+<ranking>1|1|1|1|1|1|1|1|1|1</ranking>
+<instanceOrder></instanceOrder>
+</Metadata_Fanout>
+<Metadata_Fanout>
+<perm_id>100001</perm_id>
+<qcode>G:1T</qcode>
+<view>404323</view>
+<fanout_type>Long</fanout_type>
+<english>Abu Dhabi</english>
+<multilanguages>ja アブダビ|zh-Hans 阿布扎比</multilanguages>
+<japanese>アブダビ</japanese>
+<chinese>阿布扎比</chinese>
+<perm_id_genealogy>
+    1001046691\1000471167\100316\100001|1001046691\113553\100316\100001|1001046689\100316\100001|1001046691\111660\100316\100001|1001046691\113547\100316\100001|1001046691\1000475155\100316\100001|1001046691\113682\100316\100001|113683\100316\100001|1001046675\1000475109\100316\100001
+</perm_id_genealogy>
+<qcode_genealogy>
+    M:DQ\G:C4\G:A4\G:1T|M:DQ\G:BB\G:A4\G:1T|M:A9\G:A4\G:1T|M:DQ\G:AT\G:A4\G:1T|M:DQ\G:BA\G:A4\G:1T|M:DQ\G:3UF\G:A4\G:1T|M:DQ\G:C3\G:A4\G:1T|G:A4\G:1T|M:DH\G:BE\G:A4\G:1T
+</qcode_genealogy>
+<english_genealogy>
+    Country Grouping\MENA\United Arab Emirates\Abu Dhabi|Country Grouping\OIC\United Arab Emirates\Abu Dhabi|Country\United Arab Emirates\Abu Dhabi|Country Grouping\OPEC\United Arab Emirates\Abu Dhabi|Country Grouping\MENASA\United Arab Emirates\Abu Dhabi|Country Grouping\CEEMEA\United Arab Emirates\Abu Dhabi|Country Grouping\GCC\United Arab Emirates\Abu Dhabi|Middle East and North Africa\United Arab Emirates\Abu Dhabi|Continent / Region\Asia\United Arab Emirates\Abu Dhabi
+</english_genealogy>
+<japanese_genealogy>
+    ja 国際機関\MENA 諸国\アラブ首長国連邦\アブダビ|ja 国際機関\\アラブ首長国連邦\アブダビ|ja 国\アラブ首長国連邦\アブダビ|ja 国際機関\OPEC 加盟国\アラブ首長国連邦\アブダビ|ja 国際機関\\アラブ首長国連邦\アブダビ|ja 国際機関\中欧・東欧・中東・アフリカ\アラブ首長国連邦\アブダビ|ja 国際機関\\アラブ首長国連邦\アブダビ|ja \アラブ首長国連邦\アブダビ|ja 大陸 / 地域\アジア\アラブ首長国連邦\アブダビ
+</japanese_genealogy>
+<chinese_genealogy>
+    zh-Hans 国家分组\MENA 国家\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\伊斯兰会议组织\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家/地区\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\欧佩克\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\中东、北非、南亚\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\\阿拉伯联合酋长国\阿布扎比|zh-Hans \阿拉伯联合酋长国\阿布扎比|zh-Hans 大陆/地区\亚洲\阿拉伯联合酋长国\阿布扎比
+</chinese_genealogy>
+<multilanguage_genealogy>
+    ja 国際機関\MENA 諸国\アラブ首長国連邦\アブダビ|ja 国際機関\\アラブ首長国連邦\アブダビ|ja 国\アラブ首長国連邦\アブダビ|ja 国際機関\OPEC 加盟国\アラブ首長国連邦\アブダビ|ja 国際機関\\アラブ首長国連邦\アブダビ|ja 国際機関\中欧・東欧・中東・アフリカ\アラブ首長国連邦\アブダビ|ja 国際機関\\アラブ首長国連邦\アブダビ|ja \アラブ首長国連邦\アブダビ|ja 大陸 / 地域\アジア\アラブ首長国連邦\アブダビ|zh-Hans 国家分组\MENA 国家\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\伊斯兰会议组织\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家/地区\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\欧佩克\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\中东、北非、南亚\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\\阿拉伯联合酋长国\阿布扎比|zh-Hans 国家分组\\阿拉伯联合酋长国\阿布扎比|zh-Hans \阿拉伯联合酋长国\阿布扎比|zh-Hans 大陆/地区\亚洲\阿拉伯联合酋长国\阿布扎比
+</multilanguage_genealogy>
+<ranking>1|1|1|1|1|1|1|1|1</ranking>
+<instanceOrder></instanceOrder>
+</Metadata_Fanout>
+</env:Data>

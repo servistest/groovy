@@ -59,43 +59,10 @@
         },
         {
             "fields": [
-                "/Identifier/IdentifierValue/v"
-            ],
-            "mpName": [
-                "contrLocCode01n1"
-            ],
-            "mpPath": [
-                "/Identifier/"
-            ]
-        },
-        {
-            "fields": [
-                "/Identifier/IdentifierValue/a/identifierEntityId"
-            ],
-            "mpName": [
-                "contrLocCode11n1"
-            ],
-            "mpPath": [
-                "/Identifier/"
-            ]
-        },
-        {
-            "fields": [
                 "/Identifier/IdentifierValue/a/identifierEntityId"
             ],
             "mpName": [
                 "firstCurrencyExtIdentifier0"
-            ],
-            "mpPath": [
-                "/Identifier/"
-            ]
-        },
-        {
-            "fields": [
-                "/Identifier/IdentifierValue/a/identifierEntityId"
-            ],
-            "mpName": [
-                "secondCurrencyExtIdentifier0"
             ],
             "mpPath": [
                 "/Identifier/"
@@ -111,22 +78,42 @@
             "mpPath": [
                 "/Identifier/"
             ]
-        }
-    ],
-    "TimeZone": [
+        },
         {
             "fields": [
-                "/TimeZone/a/timeZoneId"
+                "/Identifier/IdentifierValue/a/identifierEntityId"
             ],
             "mpName": [
-                "contrLoc0"
+                "contrLocCode0"
             ],
             "mpPath": [
-                "/TimeZone/"
+                "/Identifier/"
+            ]
+        },
+        {
+            "fields": [
+                "/Identifier/IdentifierValue/v"
+            ],
+            "mpName": [
+                "contrLocCode1"
+            ],
+            "mpPath": [
+                "/Identifier/"
+            ]
+        },
+        {
+            "fields": [
+                "/Identifier/IdentifierValue/a/identifierEntityId"
+            ],
+            "mpName": [
+                "secondCurrencyExtIdentifier0"
+            ],
+            "mpPath": [
+                "/Identifier/"
             ]
         }
     ],
-    "TimeZone2": [
+    "TimeZone": [
         {
             "fields": [
                 "/TimeZone/a/timeZoneId"

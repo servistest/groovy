@@ -1,0 +1,54 @@
+-- insert into tmp_rcslookupstaging(rcspermid,rcscode,rcsleaf,rcsleafja,rcsleafzh,rcsgenealogy,rcsname,rcsnameja,rcsnamezh)
+
+
+-- select e.childid as rcspermid,
+select e.childid as rcspermid,
+
+
+-- case e.hierarchylevel when 1 then e.i1 when 2 then e.i2 when 3 then e.i3 when 4 then e.i4 when 5 then e.i5 end as rcscode,
+-- case e.hierarchylevel when 1 then e.g1 when 2 then e.g2 when 3 then e.g3 when 4 then e.g4 when 5 then e.g5 end as rcsleaf,
+-- case e.hierarchylevel when 1 then e.gja1 when 2 then e.gja2 when 3 then e.gja3 when 4 then e.gja4 when 5 then e.gja5 end as rcsleafja,
+-- case e.hierarchylevel when 1 then e.gzh1 when 2 then e.gzh2 when 3 then e.gzh3 when 4 then e.gzh4 when 5 then e.gzh5 end as rcsleafzh,
+-- case e.hierarchylevel when 1 then e.i1 when 2 then e.i1+'\'+e.i2 when 3 then e.i1+'\'+e.i2+'\'+e.i3 when 4 then e.i1+'\'+e.i2+'\'+e.i3+'\'+e.i4 when 5 then e.i1+'\'+e.i2+'\'+e.i3+'\'+e.i4+'\'+e.i5 end as rcsgenealogy,
+-- case e.hierarchylevel when 1 then e.g1 when 2 then e.g1+'\'+e.g2 when 3 then e.g1+'\'+e.g2+'\'+e.g3 when 4 then e.g1+'\'+e.g2+'\'+e.g3+'\'+e.g4 when 5 then e.g1+'\'+e.g2+'\'+e.g3+'\'+e.g4+'\'+e.g5 end as rcsname,
+-- case e.hierarchylevel when 1 then coalesce(e.gja1,'') when 2 then coalesce(e.gja1,'')+'\'+coalesce(e.gja2,'') when 3 then coalesce(e.gja1,'')+'\'+coalesce(e.gja2,'')+'\'+coalesce(e.gja3,'') when 4 then coalesce(e.gja1,'')+'\'+coalesce(e.gja2,'')+'\'+coalesce(e.gja3,'')+'\'+coalesce(e.gja4,'') when 5 then coalesce(e.gja1,'')+'\'+coalesce(e.gja2,'')+'\'+coalesce(e.gja3,'')+'\'+coalesce(e.gja4,'')+'\'+coalesce(e.gja5,'') end as rcsnameja,
+-- case e.hierarchylevel when 1 then coalesce(e.gzh1,'') when 2 then coalesce(e.gzh1,'')+'\'+coalesce(e.gzh2,'') when 3 then coalesce(e.gzh1,'')+'\'+coalesce(e.gzh2,'')+'\'+coalesce(e.gzh3,'') when 4 then coalesce(e.gzh1,'')+'\'+coalesce(e.gzh2,'')+'\'+coalesce(e.gzh3,'')+'\'+coalesce(e.gzh4,'') when 5 then coalesce(e.gzh1,'')+'\'+coalesce(e.gzh2,'')+'\'+coalesce(e.gzh3,'')+'\'+coalesce(e.gzh4,'')+'\'+coalesce(e.gzh5,'') end as rcsnamezh
+-- from (
+--    select
+--    distinct 1 as hierarchylevel,
+--    r1.relationobjectid as parentid,
+--    r1.relatedobjectid as childid,
+--    g1.name as g1,
+--    '' as g2,
+--    '' as g3,
+--    '' as g4,
+--    '' as g5,
+--    '' as g6,
+--    gja1.name as gja1,
+--    '' as gja2,
+--    '' as gja3,
+--    '' as gja4,
+--    '' as gja5,
+--    '' as gja6,
+--    gzh1.name as gzh1,
+--    '' as gzh2,
+--    '' as gzh3,
+--    '' as gzh4,
+--    '' as gzh5,
+--    '' as gzh6,
+--    i1.identifiervalue as i1,
+--    '' as i2,
+--    '' as i3,
+--    '' as i4,
+--    '' as i5,
+--    '' as i6
+--    from tmp_relationship r1
+--    join tmp_english g1 on r1.relatedobjectid=g1.key
+--    left join tmp_japanese gja1 on r1.relatedobjectid = gja1.key
+--    left join tmp_chinese gzh1 on r1.relatedobjectid = gzh1.key
+--    join tmp_identifiers i1 ON r1.relatedobjectid = i1.identifierentityid
+--    where r1.relatedobjecttypeid=404014 -- Currency
+--    and r1.relationobjecttypeid=1000228224 -- Heading
+--    and r1.relationshiprelationshiptypeid=1000228235 -- IsActiveForView relationship
+-- )e;
+--

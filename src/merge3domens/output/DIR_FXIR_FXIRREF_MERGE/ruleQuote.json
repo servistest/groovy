@@ -1,0 +1,1259 @@
+{
+    "arrayFilters": {
+        "structureForFirstCurrency": [
+            ".FxirStructCurrencies.FxirStructCurrency{.a.fxirStructCurrencyRole == \"BASE\" }"
+        ],
+        "structureForSecondCurrency": [
+            ".FxirStructCurrencies.FxirStructCurrency{.a.fxirStructCurrencyRole == \"SECONDARY\" }"
+        ]
+    },
+    "control": {
+        "enableFormatterCache": false,
+        "enableKeyHierarchy": false,
+        "enableUDF": true,
+        "enableWriter": true,
+        "outputToElasticsearch": true
+    },
+    "extraLinks": [],
+    "extraPickers": {
+        "assetClassFanout.chinese.v": "RCSAssetCategoryLeafZhHans",
+        "assetClassFanout.chinese_genealogy.v": "RCSAssetCategoryNameZh",
+        "assetClassFanout.english.v": "RCSAssetCategoryLeaf",
+        "assetClassFanout.english_genealogy.v": "RCSAssetCategoryName",
+        "assetClassFanout.japanese.v": "RCSAssetCategoryLeafJaHani",
+        "assetClassFanout.japanese_genealogy.v": "RCSAssetCategoryNameJa",
+        "assetClassFanout.multilanguage_genealogy.v": "RCSAssetCategoryNameML",
+        "assetClassFanout.multilanguages.v": "RCSAssetCategoryLeafML",
+        "assetClassFanout.qcode.v": "RCSAssetCategory",
+        "assetClassFanout.qcode_genealogy.v": "RCSAssetCategoryGenealogy",
+        "bankGuide.BankGuideID.v": "BankGuideID",
+        "contrLoc.TimeZoneUniqueName.v": "ContributorLocationCityName",
+        "contributor.DS_ContributorCommonName.v": "ContributorCommonName",
+        "contributor.DS_ContributorLocationCode.v": "ContributorLocationCity",
+        "contributor.DS_ExchangeCode.v": "ExchangeCode",
+        "contributor.DS_ExchangeCountryCode.v": "ExchangeCountry",
+        "contributor.DS_ExchangeName.v": "ExchangeName",
+        "contributor.DS_IsExchangeTradable.v": "IsExchangeTradable",
+        "contributorCountryFanout.chinese.v": "RCSContributorLocationLeafZh",
+        "contributorCountryFanout.english.v": "RCSContributorLocationLeaf",
+        "contributorCountryFanout.english_genealogy.v": "RCSContributorLocationName",
+        "contributorCountryFanout.japanese.v": "RCSContributorLocationLeafJa",
+        "contributorCountryFanout.multilanguage_genealogy.v": "RCSContributorLocationNameML",
+        "contributorCountryFanout.multilanguages.v": "RCSContributorLocationLeafML",
+        "contributorCountryFanout.qcode.v": "RCSContributorLocation",
+        "contributorCountryFanout.qcode_genealogy.v": "RCSContributorLocationGenealogy",
+        "contributorTypeFanout.chinese.v": "RCSContributorTypeLeafZh",
+        "contributorTypeFanout.english.v": "RCSContributorTypeLeaf",
+        "contributorTypeFanout.japanese.v": "RCSContributorTypeLeafJa",
+        "contributorTypeFanout.multilanguages.v": "RCSContributorTypeLeafML",
+        "contributorTypeFanout.qcode.v": "RCSContributorType",
+        "contributorTypeFanout.qcode_genealogy.v": "RCSContributorTypeGenealogy",
+        "curveSubTypeFanout.english.v": "RCSCurveTypeLeaf",
+        "curveSubTypeFanout.english_genealogy.v": "RCSCurveTypeName",
+        "curveSubTypeFanout.multilanguage_genealogy.v": "RCSCurveTypeNameML",
+        "curveSubTypeFanout.multilanguages.v": "RCSCurveTypeLeafML",
+        "curveSubTypeFanout.qcode.v": "RCSCurveType",
+        "curveSubTypeFanout.qcode_genealogy.v": "RCSCurveTypeGenealogy",
+        "exchangeCountryFanout.english.v": "RCSExchangeCountryLeaf",
+        "exchangeCountryFanout.english_genealogy.v": "RCSExchangeCountryName",
+        "exchangeCountryFanout.multilanguage_genealogy.v": "RCSExchangeCountryNameML",
+        "exchangeCountryFanout.multilanguages.v": "RCSExchangeCountryLeafML",
+        "exchangeCountryFanout.qcode.v": "RCSExchangeCountry",
+        "exchangeCountryFanout.qcode_genealogy.v": "RCSExchangeCountryGenealogy",
+        "fd1.Description.v": "Leg1UnderlyingFrequency",
+        "fd2.Description.v": "Leg2UnderlyingFrequency",
+        "firstCurrency.a.currencyId": "FirstCurrencyPermId",
+        "firstCurrencyExtIdentifier.IdentifierValue.v": "FirstCurrencyISOExt",
+        "firstCurrencyFanout.chinese.v": "RCSFirstCurrencyLeafZh",
+        "firstCurrencyFanout.english.v": "RCSFirstCurrencyLeaf",
+        "firstCurrencyFanout.japanese.v": "RCSFirstCurrencyLeafJa",
+        "firstCurrencyFanout.multilanguages.v": "RCSFirstCurrencyLeafML",
+        "firstCurrencyFanout.qcode.v": "RCSFirstCurrency",
+        "firstCurrencyIdentifier.IdentifierValue.v": "FirstCurrencyISO",
+        "iborTypeFanout.english.v": "RCSIborFixingTypeLeaf",
+        "iborTypeFanout.multilanguages.v": "RCSIborFixingTypeLeafML",
+        "iborTypeFanout.qcode.v": "RCSIborFixingType",
+        "instrument.FxirInstrTenorId.v": "TermMaturity",
+        "instrument.FxirInstrTenorType.v": "TenorType",
+        "instrument.a.fxirInstrumentId": "BaseInstrumentPermId",
+        "instrumentIdentifier.IdentifierValue.v": "RicRoot",
+        "parentChainVehicle.a.vehicleId": "BaseCurveTilePermId",
+        "priceTypeFanout.chinese.v": "RCSPriceTypeLeafZh",
+        "priceTypeFanout.english.v": "RCSPriceTypeLeaf",
+        "priceTypeFanout.japanese.v": "RCSPriceTypeLeafJa",
+        "priceTypeFanout.multilanguages.v": "RCSPriceTypeLeafML",
+        "priceTypeFanout.qcode.v": "RCSPriceType",
+        "priceTypeFanout.qcode_genealogy.v": "RCSPriceTypeGenealogy",
+        "primaryInstrument.a.fxirInstrumentId": "_IsPrimaryQuote",
+        "quote.FxirQuoteContributorCode.v": "ContributorCode",
+        "quote.FxirQuoteContributorType.v": "ContributorType",
+        "quote.FxirQuoteIsOffShore.v": "IsOffShoreQuote",
+        "quote.FxirQuoteLongDisplayName.v": "CommonName",
+        "quote.FxirQuotePermissionableEntity.v": "PO",
+        "quote.FxirQuotePriceSourceCode.v": "PriceSourceCode",
+        "quote.FxirQuotePriceType.v": "PriceType",
+        "quote.FxirQuoteScalingFactor.v": "ScalingFactor",
+        "quote.FxirQuoteShortDisplayName.v": "ShortName",
+        "quote.a.fxirQuoteId": "PI",
+        "rateTypeFanout.english.v": "RCSCurveRateTypeLeaf",
+        "rateTypeFanout.multilanguages.v": "RCSCurveRateTypeLeafML",
+        "rateTypeFanout.qcode.v": "RCSCurveRateType",
+        "secondCurrencyExtIdentifier.IdentifierValue.v": "SecondCurrencyISOExt",
+        "secondCurrencyFanout.chinese.v": "RCSSecondCurrencyLeafZh",
+        "secondCurrencyFanout.english.v": "RCSSecondCurrencyLeaf",
+        "secondCurrencyFanout.japanese.v": "RCSSecondCurrencyLeafJa",
+        "secondCurrencyFanout.multilanguages.v": "RCSSecondCurrencyLeafML",
+        "secondCurrencyFanout.qcode.v": "RCSSecondCurrency",
+        "secondCurrencyIdentifier.IdentifierValue.v": "SecondCurrencyISO",
+        "structure.FxirStructAssetClassId.v": "RCSAssetClassId",
+        "structure.FxirStructCrossAttrs.FxirStructCrossAttr.FxirStructCrossAttrCrossRateDecimals.v": "CrossDecimalPointConvention",
+        "structure.FxirStructCrossAttrs.FxirStructCrossAttr.FxirStructCrossAttrSwapPointDecimals.v": "SwapDecimalPointConvention",
+        "structure.FxirStructCrossAttrs.FxirStructCrossAttr.FxirStructCrossAttrSwapPointScaling.v": "ScalingFactorConvention",
+        "structure.FxirStructCurrencies.FxirStructCurrency.FxirStructCurAttrs.FxirStructCurAttr.a.fxirStructCurAttrIsOffShore": "IsOffShoreStructure",
+        "structure.FxirStructCurveSubType.v": "CurveType",
+        "structure.FxirStructIborType.v": "IborFixingType",
+        "structure.FxirStructLongDisplayName.v": "StructureCommonName",
+        "structure.FxirStructMrkConventionFl.v": "IsConvention",
+        "structure.FxirStructNonDeliverableFl.v": "IsNonDeliverableStructure",
+        "structure.FxirStructRateType.v": "CurveRateType",
+        "structure.FxirStructTenorType.v": "StructTenorType",
+        "structure.a.fxirStructureId": "BaseStructurePermId",
+        "tenorFanout.english.v": "RCSStructTenorLeaf",
+        "tenorFanout.english_genealogy.v": "RCSStructTenorName",
+        "tenorFanout.multilanguage_genealogy.v": "RCSStructTenorNameML",
+        "tenorFanout.multilanguages.v": "RCSStructTenorLeafML",
+        "tenorFanout.qcode.v": "RCSStructTenor",
+        "tenorFanout.qcode_genealogy.v": "RCSStructTenorGenealogy",
+        "tenorFanout.ranking.v": "RCSStructTenorRank",
+        "tenorIdFanout.english.v": "RCSInstrTenorLeaf",
+        "tenorIdFanout.english_genealogy.v": "RCSInstrTenorName",
+        "tenorIdFanout.multilanguage_genealogy.v": "RCSInstrTenorNameML",
+        "tenorIdFanout.multilanguages.v": "RCSInstrTenorLeafML",
+        "tenorIdFanout.qcode.v": "RCSInstrTenor",
+        "tenorIdFanout.qcode_genealogy.v": "RCSInstrTenorGenealogy",
+        "tenorIdFanout.ranking.v": "RCSInstrTenorRank",
+        "tenorTypeFanout.english.v": "RCSTenorTypeLeaf",
+        "tenorTypeFanout.multilanguages.v": "RCSTenorTypeLeafML",
+        "tenorTypeFanout.qcode.v": "RCSTenorType",
+        "undlyLeg1.FxirUndlyCpnCalcMethod.v": "Leg1UnderlyingCpnCalcMethod",
+        "undlyLeg1.FxirUndlyIborType.v": "Leg1UnderlyingIborType",
+        "undlyLeg1.FxirUndlyType.v": "Leg1UnderlyingType",
+        "undlyLeg1.FxirUndlyUnderlyingRIC.v": "Leg1UnderlyingRIC",
+        "undlyLeg2.FxirUndlyCpnCalcMethod.v": "Leg2UnderlyingCpnCalcMethod",
+        "undlyLeg2.FxirUndlyIborType.v": "Leg2UnderlyingIborType",
+        "undlyLeg2.FxirUndlyType.v": "Leg2UnderlyingType",
+        "undlyLeg2.FxirUndlyUnderlyingRIC.v": "Leg2UnderlyingRIC",
+        "vehicleChain.FxirChainType.v": "ChainType",
+        "vehicleChain.FxirChainVehicleId.v": "BaseCurvePermId",
+        "vehicleIdentifier.IdentifierValue.v": "RIC"
+    },
+    "instancePath": {
+        "IsParentChainOf": "/FxirQuote/quote1C2/Relationship/",
+        "IsPrimaryChainOf": "/FxirQuote/quote1C0/Relationship/",
+        "IsPrimaryQuoteOf": "/FxirQuote/quote1C1/Relationship/",
+        "IsQuoteOf": "/FxirQuote/quote1C4/Relationship/",
+        "IsStructureOf": "/FxirQuote/quote1C4/Relationship/IsQuoteOf0/FxirInstrument/instrument2C0/Relationship/",
+        "IsVehicleOf": "/FxirQuote/quote1C3/Relationship/",
+        "assetClassFanout": "/FxirQuote/quote1C4/Relationship/IsQuoteOf0/FxirInstrument/instrument2C0/Relationship/IsStructureOf1/FxirStructure/structure5/Metadata_Fanout/",
+        "bankGuide": "/FxirQuote/quote3/Contributor/contributor1/BankGuideMapping/",
+        "contrLoc": "/FxirQuote/quote3/Contributor/contributor3/Identifier/contrLocCode0/TimeZone/",
+        "contrLocCode": "/FxirQuote/quote3/Contributor/contributor3/Identifier/",
+        "contributor": "/FxirQuote/quote3/Contributor/",
+        "contributorCountryFanout": "/FxirQuote/quote3/Contributor/contributor2/Metadata_Mapping/contributorCountryMapping1/Metadata_Fanout/",
+        "contributorCountryMapping": "/FxirQuote/quote3/Contributor/contributor2/Metadata_Mapping/",
+        "contributorTypeFanout": "/FxirQuote/quote2/Metadata_Mapping/contributorTypeMapping0/Metadata_Fanout/",
+        "contributorTypeMapping": "/FxirQuote/quote2/Metadata_Mapping/",
+        "curveSubTypeFanout": "/FxirQuote/quote1C4/Relationship/IsQuoteOf0/FxirInstrument/instrument2C0/Relationship/IsStructureOf1/FxirStructure/structure4/Metadata_Mapping/curveSubTypeMapping1/Metadata_Fanout/",
+        "curveSubTypeMapping": "/FxirQuote/quote1C4/Relationship/IsQuoteOf0/FxirInstrument/instrument2C0/Relationship/IsStructureOf1/FxirStructure/structure4/Metadata_Mapping/",
+        "exchangeCountryFanout": "/FxirQuote/quote3/Contributor/contributor4/Metadata_Mapping/exchangeCountryMapping1/Metadata_Fanout/",
+        "exchangeCountryMapping": "/FxirQuote/quote3/Contributor/contributor4/Metadata_Mapping/",
+        "fd1": "/FxirQuote/quote1C4/Relationship/IsQuoteOf0/FxirInstrument/instrument2C0/Relationship/IsStructureOf1/FxirStructure/structure3C2/FxirUnderlyingAttr/undlyLeg11/FrequencyDescription/",
+        "fd2": "/FxirQuote/quote1C4/Relationship/IsQuoteOf0/FxirInstrument/instrument2C0/Relationship/IsStructureOf1/FxirStructure/structure3C3/FxirUnderlyingAttr/undlyLeg21/FrequencyDescription/",
+        "firstCurrency": "/FxirQuote/quote1C4/Relationship/IsQuoteOf0/FxirInstrument/instrument2C0/Relationship/IsStructureOf1/FxirStructure/structure3C3/FxirStructure/structureForFirstCurrency1/Currency/",
+        "firstCurrencyExtIdentifier": "/FxirQuote/quote1C4/Relationship/IsQuoteOf0/FxirInstrument/instrument2C0/Relationship/IsStructureOf1/FxirStructure/structure3C3/FxirStructure/structureForFirstCurrency1/Currency/firstCurrency0C1/Identifier/",
+        "firstCurrencyFanout": "/FxirQuote/quote1C4/Relationship/IsQuoteOf0/FxirInstrument/instrument2C0/Relationship/IsStructureOf1/FxirStructure/structure3C3/FxirStructure/structureForFirstCurrency1/Metadata_Fanout/",
+        "firstCurrencyIdentifier": "/FxirQuote/quote1C4/Relationship/IsQuoteOf0/FxirInstrument/instrument2C0/Relationship/IsStructureOf1/FxirStructure/structure3C3/FxirStructure/structureForFirstCurrency1/Currency/firstCurrency0C0/Identifier/",
+        "iborTypeFanout": "/FxirQuote/quote1C4/Relationship/IsQuoteOf0/FxirInstrument/instrument2C0/Relationship/IsStructureOf1/FxirStructure/structure1/Metadata_Mapping/iborTypeMapping1/Metadata_Fanout/",
+        "iborTypeMapping": "/FxirQuote/quote1C4/Relationship/IsQuoteOf0/FxirInstrument/instrument2C0/Relationship/IsStructureOf1/FxirStructure/structure1/Metadata_Mapping/",
+        "instrument": "/FxirQuote/quote1C4/Relationship/IsQuoteOf0/FxirInstrument/",
+        "instrumentIdentifier": "/FxirQuote/quote1C4/Relationship/IsQuoteOf0/FxirInstrument/instrument2C1/Identifier/",
+        "parentChainVehicle": "/FxirQuote/quote1C2/Relationship/IsParentChainOf0/FxirVehicle/",
+        "priceTypeFanout": "/FxirQuote/quote0/Metadata_Mapping/priceTypeMapping0/Metadata_Fanout/",
+        "priceTypeMapping": "/FxirQuote/quote0/Metadata_Mapping/",
+        "primaryInstrument": "/FxirQuote/quote1C1/Relationship/IsPrimaryQuoteOf1/FxirInstrument/",
+        "quote": "/FxirQuote/",
+        "rateTypeFanout": "/FxirQuote/quote1C4/Relationship/IsQuoteOf0/FxirInstrument/instrument2C0/Relationship/IsStructureOf1/FxirStructure/structure0/Metadata_Mapping/rateTypeMapping1/Metadata_Fanout/",
+        "rateTypeMapping": "/FxirQuote/quote1C4/Relationship/IsQuoteOf0/FxirInstrument/instrument2C0/Relationship/IsStructureOf1/FxirStructure/structure0/Metadata_Mapping/",
+        "secondCurrency": "/FxirQuote/quote1C4/Relationship/IsQuoteOf0/FxirInstrument/instrument2C0/Relationship/IsStructureOf1/FxirStructure/structure3C2/FxirStructure/structureForSecondCurrency0/Currency/",
+        "secondCurrencyExtIdentifier": "/FxirQuote/quote1C4/Relationship/IsQuoteOf0/FxirInstrument/instrument2C0/Relationship/IsStructureOf1/FxirStructure/structure3C2/FxirStructure/structureForSecondCurrency0/Currency/secondCurrency0C1/Identifier/",
+        "secondCurrencyFanout": "/FxirQuote/quote1C4/Relationship/IsQuoteOf0/FxirInstrument/instrument2C0/Relationship/IsStructureOf1/FxirStructure/structure3C2/FxirStructure/structureForSecondCurrency0/Metadata_Fanout/",
+        "secondCurrencyIdentifier": "/FxirQuote/quote1C4/Relationship/IsQuoteOf0/FxirInstrument/instrument2C0/Relationship/IsStructureOf1/FxirStructure/structure3C2/FxirStructure/structureForSecondCurrency0/Currency/secondCurrency0C0/Identifier/",
+        "structure": "/FxirQuote/quote1C4/Relationship/IsQuoteOf0/FxirInstrument/instrument2C0/Relationship/IsStructureOf1/FxirStructure/",
+        "structureForFirstCurrency": "/FxirQuote/quote1C4/Relationship/IsQuoteOf0/FxirInstrument/instrument2C0/Relationship/IsStructureOf1/FxirStructure/structure3C3/FxirStructure/",
+        "structureForSecondCurrency": "/FxirQuote/quote1C4/Relationship/IsQuoteOf0/FxirInstrument/instrument2C0/Relationship/IsStructureOf1/FxirStructure/structure3C2/FxirStructure/",
+        "tenorFanout": "/FxirQuote/quote1C4/Relationship/IsQuoteOf0/FxirInstrument/instrument2C0/Relationship/IsStructureOf1/FxirStructure/structure2/Metadata_Fanout/",
+        "tenorIdFanout": "/FxirQuote/quote1C4/Relationship/IsQuoteOf0/FxirInstrument/instrument1/Metadata_Fanout/",
+        "tenorTypeFanout": "/FxirQuote/quote1C4/Relationship/IsQuoteOf0/FxirInstrument/instrument0/Metadata_Mapping/tenorTypeMapping0/Metadata_Fanout/",
+        "tenorTypeMapping": "/FxirQuote/quote1C4/Relationship/IsQuoteOf0/FxirInstrument/instrument0/Metadata_Mapping/",
+        "undlyLeg1": "/FxirQuote/quote1C4/Relationship/IsQuoteOf0/FxirInstrument/instrument2C0/Relationship/IsStructureOf1/FxirStructure/structure3C2/FxirUnderlyingAttr/",
+        "undlyLeg2": "/FxirQuote/quote1C4/Relationship/IsQuoteOf0/FxirInstrument/instrument2C0/Relationship/IsStructureOf1/FxirStructure/structure3C3/FxirUnderlyingAttr/",
+        "vehicle": "/FxirQuote/quote1C0/Relationship/IsPrimaryChainOf1/FxirVehicle/",
+        "vehicleChain": "/FxirQuote/quote1C0/Relationship/IsPrimaryChainOf1/FxirVehicle/vehicle0/FxirChain/",
+        "vehicleIdentifier": "/FxirQuote/quote1C3/Relationship/IsVehicleOf1/FxirVehicle/vehicleQuote0/Identifier/",
+        "vehicleQuote": "/FxirQuote/quote1C3/Relationship/IsVehicleOf1/FxirVehicle/"
+    },
+    "links": [
+        {
+            "join": "left",
+            "srcKeyName": "quote0",
+            "srcType": "quote",
+            "tarKeyName": "priceTypeMapping1",
+            "tarType": "priceTypeMapping"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "quote1C4",
+            "srcType": "quote",
+            "tarKeyName": "IsQuoteOf1",
+            "tarType": "IsQuoteOf"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "quote3",
+            "srcType": "quote",
+            "tarKeyName": "contributor0",
+            "tarType": "contributor"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "quote1C0",
+            "srcType": "quote",
+            "tarKeyName": "IsPrimaryChainOf0",
+            "tarType": "IsPrimaryChainOf"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "quote1C1",
+            "srcType": "quote",
+            "tarKeyName": "IsPrimaryQuoteOf0",
+            "tarType": "IsPrimaryQuoteOf"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "quote1C2",
+            "srcType": "quote",
+            "tarKeyName": "IsParentChainOf1",
+            "tarType": "IsParentChainOf"
+        },
+        {
+            "join": "inner",
+            "srcKeyName": "quote1C3",
+            "srcType": "quote",
+            "tarKeyName": "IsVehicleOf0",
+            "tarType": "IsVehicleOf"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "quote2",
+            "srcType": "quote",
+            "tarKeyName": "contributorTypeMapping1",
+            "tarType": "contributorTypeMapping"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "priceTypeMapping0",
+            "srcType": "priceTypeMapping",
+            "tarKeyName": "priceTypeFanout0",
+            "tarType": "priceTypeFanout"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "IsQuoteOf0",
+            "srcType": "IsQuoteOf",
+            "tarKeyName": "instrument2C1",
+            "tarType": "instrument"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "contributor2",
+            "srcType": "contributor",
+            "tarKeyName": "contributorCountryMapping0",
+            "tarType": "contributorCountryMapping"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "contributor3",
+            "srcType": "contributor",
+            "tarKeyName": "contrLocCode1",
+            "tarType": "contrLocCode"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "contributor1",
+            "srcType": "contributor",
+            "tarKeyName": "bankGuide0",
+            "tarType": "bankGuide"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "contributor4",
+            "srcType": "contributor",
+            "tarKeyName": "exchangeCountryMapping0",
+            "tarType": "exchangeCountryMapping"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "IsPrimaryChainOf1",
+            "srcType": "IsPrimaryChainOf",
+            "tarKeyName": "vehicle0",
+            "tarType": "vehicle"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "IsPrimaryQuoteOf1",
+            "srcType": "IsPrimaryQuoteOf",
+            "tarKeyName": "primaryInstrument0",
+            "tarType": "primaryInstrument"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "IsParentChainOf0",
+            "srcType": "IsParentChainOf",
+            "tarKeyName": "parentChainVehicle0",
+            "tarType": "parentChainVehicle"
+        },
+        {
+            "join": "inner",
+            "srcKeyName": "IsVehicleOf1",
+            "srcType": "IsVehicleOf",
+            "tarKeyName": "vehicleQuote0",
+            "tarType": "vehicleQuote"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "contributorTypeMapping0",
+            "srcType": "contributorTypeMapping",
+            "tarKeyName": "contributorTypeFanout0",
+            "tarType": "contributorTypeFanout"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "instrument0",
+            "srcType": "instrument",
+            "tarKeyName": "tenorTypeMapping1",
+            "tarType": "tenorTypeMapping"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "instrument1",
+            "srcType": "instrument",
+            "tarKeyName": "tenorIdFanout0",
+            "tarType": "tenorIdFanout"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "instrument2C0",
+            "srcType": "instrument",
+            "tarKeyName": "IsStructureOf0",
+            "tarType": "IsStructureOf"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "instrument2C1",
+            "srcType": "instrument",
+            "tarKeyName": "instrumentIdentifier0",
+            "tarType": "instrumentIdentifier"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "contributorCountryMapping1",
+            "srcType": "contributorCountryMapping",
+            "tarKeyName": "contributorCountryFanout0",
+            "tarType": "contributorCountryFanout"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "contrLocCode0",
+            "srcType": "contrLocCode",
+            "tarKeyName": "contrLoc0",
+            "tarType": "contrLoc"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "exchangeCountryMapping1",
+            "srcType": "exchangeCountryMapping",
+            "tarKeyName": "exchangeCountryFanout0",
+            "tarType": "exchangeCountryFanout"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "vehicle0",
+            "srcType": "vehicle",
+            "tarKeyName": "vehicleChain0",
+            "tarType": "vehicleChain"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "vehicleQuote0",
+            "srcType": "vehicleQuote",
+            "tarKeyName": "vehicleIdentifier0",
+            "tarType": "vehicleIdentifier"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "tenorTypeMapping0",
+            "srcType": "tenorTypeMapping",
+            "tarKeyName": "tenorTypeFanout0",
+            "tarType": "tenorTypeFanout"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "IsStructureOf1",
+            "srcType": "IsStructureOf",
+            "tarKeyName": "structure3C3",
+            "tarType": "structure"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "structure3C3",
+            "srcType": "structure",
+            "tarKeyName": "structureForFirstCurrency0",
+            "tarType": "structureForFirstCurrency"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "structure3C3",
+            "srcType": "structure",
+            "tarKeyName": "undlyLeg20",
+            "tarType": "undlyLeg2"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "structure1",
+            "srcType": "structure",
+            "tarKeyName": "iborTypeMapping0",
+            "tarType": "iborTypeMapping"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "structure3C2",
+            "srcType": "structure",
+            "tarKeyName": "undlyLeg10",
+            "tarType": "undlyLeg1"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "structure2",
+            "srcType": "structure",
+            "tarKeyName": "tenorFanout0",
+            "tarType": "tenorFanout"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "structure3C2",
+            "srcType": "structure",
+            "tarKeyName": "structureForSecondCurrency1",
+            "tarType": "structureForSecondCurrency"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "structure4",
+            "srcType": "structure",
+            "tarKeyName": "curveSubTypeMapping0",
+            "tarType": "curveSubTypeMapping"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "structure0",
+            "srcType": "structure",
+            "tarKeyName": "rateTypeMapping0",
+            "tarType": "rateTypeMapping"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "structure5",
+            "srcType": "structure",
+            "tarKeyName": "assetClassFanout0",
+            "tarType": "assetClassFanout"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "structureForFirstCurrency1",
+            "srcType": "structureForFirstCurrency",
+            "tarKeyName": "firstCurrencyFanout0",
+            "tarType": "firstCurrencyFanout"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "structureForFirstCurrency1",
+            "srcType": "structureForFirstCurrency",
+            "tarKeyName": "firstCurrency0C0",
+            "tarType": "firstCurrency"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "undlyLeg21",
+            "srcType": "undlyLeg2",
+            "tarKeyName": "fd20",
+            "tarType": "fd2"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "iborTypeMapping1",
+            "srcType": "iborTypeMapping",
+            "tarKeyName": "iborTypeFanout0",
+            "tarType": "iborTypeFanout"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "undlyLeg11",
+            "srcType": "undlyLeg1",
+            "tarKeyName": "fd10",
+            "tarType": "fd1"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "structureForSecondCurrency0",
+            "srcType": "structureForSecondCurrency",
+            "tarKeyName": "secondCurrency0C1",
+            "tarType": "secondCurrency"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "structureForSecondCurrency0",
+            "srcType": "structureForSecondCurrency",
+            "tarKeyName": "secondCurrencyFanout0",
+            "tarType": "secondCurrencyFanout"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "curveSubTypeMapping1",
+            "srcType": "curveSubTypeMapping",
+            "tarKeyName": "curveSubTypeFanout0",
+            "tarType": "curveSubTypeFanout"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "rateTypeMapping1",
+            "srcType": "rateTypeMapping",
+            "tarKeyName": "rateTypeFanout0",
+            "tarType": "rateTypeFanout"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "firstCurrency0C0",
+            "srcType": "firstCurrency",
+            "tarKeyName": "firstCurrencyIdentifier0",
+            "tarType": "firstCurrencyIdentifier"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "firstCurrency0C1",
+            "srcType": "firstCurrency",
+            "tarKeyName": "firstCurrencyExtIdentifier0",
+            "tarType": "firstCurrencyExtIdentifier"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "secondCurrency0C1",
+            "srcType": "secondCurrency",
+            "tarKeyName": "secondCurrencyExtIdentifier0",
+            "tarType": "secondCurrencyExtIdentifier"
+        },
+        {
+            "join": "left",
+            "srcKeyName": "secondCurrency0C0",
+            "srcType": "secondCurrency",
+            "tarKeyName": "secondCurrencyIdentifier0",
+            "tarType": "secondCurrencyIdentifier"
+        }
+    ],
+    "name": "STIRQuote_k",
+    "output": [],
+    "overLoad": {
+        "blacklist": [],
+        "callback": "",
+        "threshold": 1500
+    },
+    "pickers": {
+        "IsParentChainOf": [
+            ".RelationObjectId.a.relatedObjectId",
+            ".RelationObjectId.v",
+            ".RelationObjectId.a.effectiveFrom",
+            ".RelationObjectId.a.relatedObjectTypeId",
+            ".RelationObjectId.a.relationObjectTypeId",
+            ".RelationObjectId.a.relationshipId",
+            ".RelationObjectId.a.relationshipTypeId"
+        ],
+        "IsPrimaryChainOf": [
+            ".RelationObjectId.a.relatedObjectId",
+            ".RelationObjectId.v",
+            ".RelationObjectId.a.effectiveFrom",
+            ".RelationObjectId.a.relatedObjectTypeId",
+            ".RelationObjectId.a.relationObjectTypeId",
+            ".RelationObjectId.a.relationshipId",
+            ".RelationObjectId.a.relationshipTypeId"
+        ],
+        "IsPrimaryQuoteOf": [
+            ".RelationObjectId.a.relatedObjectId",
+            ".RelationObjectId.v",
+            ".RelationObjectId.a.effectiveFrom",
+            ".RelationObjectId.a.relatedObjectTypeId",
+            ".RelationObjectId.a.relationObjectTypeId",
+            ".RelationObjectId.a.relationshipId",
+            ".RelationObjectId.a.relationshipTypeId"
+        ],
+        "IsQuoteOf": [
+            ".RelationObjectId.a.relatedObjectId",
+            ".RelationObjectId.v",
+            ".RelationObjectId.a.effectiveFrom",
+            ".RelationObjectId.a.relatedObjectTypeId",
+            ".RelationObjectId.a.relationObjectTypeId",
+            ".RelationObjectId.a.relationshipId",
+            ".RelationObjectId.a.relationshipTypeId"
+        ],
+        "IsStructureOf": [
+            ".RelationObjectId.a.relatedObjectId",
+            ".RelationObjectId.v",
+            ".RelationObjectId.a.effectiveFrom",
+            ".RelationObjectId.a.relatedObjectTypeId",
+            ".RelationObjectId.a.relationObjectTypeId",
+            ".RelationObjectId.a.relationshipId",
+            ".RelationObjectId.a.relationshipTypeId"
+        ],
+        "IsVehicleOf": [
+            ".RelationObjectId.a.relatedObjectId",
+            ".RelationObjectId.v",
+            ".RelationObjectId.a.effectiveFrom",
+            ".RelationObjectId.a.relatedObjectTypeId",
+            ".RelationObjectId.a.relationObjectTypeId",
+            ".RelationObjectId.a.relationshipId",
+            ".RelationObjectId.a.relationshipTypeId"
+        ],
+        "assetClassFanout": [
+            ".chinese_genealogy.v",
+            ".english.v",
+            ".japanese.v",
+            ".qcode_genealogy.v",
+            ".multilanguages.v",
+            ".chinese.v",
+            ".japanese_genealogy.v",
+            ".english_genealogy.v",
+            ".multilanguage_genealogy.v",
+            ".qcode.v",
+            ".perm_id.v",
+            ".fanout_type.v",
+            ".perm_id_genealogy.v",
+            ".view.v"
+        ],
+        "bankGuide": [
+            ".BankGuideID.v",
+            ".ContributorsName.v"
+        ],
+        "contrLoc": [
+            ".TimeZoneUniqueName.v",
+            ".a.timeZoneId"
+        ],
+        "contrLocCode": [
+            ".IdentifierValue.a.identifierEntityId",
+            ".IdentifierValue.v",
+            ".IdentifierValue.a.effectiveFrom",
+            ".IdentifierValue.a.identifierEntityTypeId",
+            ".IdentifierValue.a.identifierTypeId"
+        ],
+        "contributor": [
+            ".DS_ExchangeName.v",
+            ".DS_ContributorCommonName.v",
+            ".DS_ContributorLocationCode.v",
+            ".DS_IsExchangeTradable.v",
+            ".DS_ExchangeCode.v",
+            ".DS_ExchangeCountryCode.v",
+            ".DS_PriceSourceCode.v",
+            ".DS_ContributorCountryCode.v"
+        ],
+        "contributorCountryFanout": [
+            ".english.v",
+            ".qcode_genealogy.v",
+            ".qcode.v",
+            ".chinese.v",
+            ".english_genealogy.v",
+            ".multilanguage_genealogy.v",
+            ".japanese.v",
+            ".multilanguages.v",
+            ".perm_id.v",
+            ".fanout_type.v",
+            ".perm_id_genealogy.v",
+            ".view.v"
+        ],
+        "contributorCountryMapping": [
+            ".value.v",
+            ".perm_id.v",
+            ".domain.v",
+            ".identifier_type.v"
+        ],
+        "contributorTypeFanout": [
+            ".english.v",
+            ".japanese.v",
+            ".qcode_genealogy.v",
+            ".multilanguages.v",
+            ".chinese.v",
+            ".qcode.v",
+            ".perm_id.v",
+            ".fanout_type.v",
+            ".perm_id_genealogy.v",
+            ".view.v"
+        ],
+        "contributorTypeMapping": [
+            ".value.v",
+            ".perm_id.v",
+            ".domain.v",
+            ".identifier_type.v"
+        ],
+        "curveSubTypeFanout": [
+            ".english.v",
+            ".qcode_genealogy.v",
+            ".multilanguages.v",
+            ".english_genealogy.v",
+            ".multilanguage_genealogy.v",
+            ".qcode.v",
+            ".perm_id.v",
+            ".fanout_type.v",
+            ".perm_id_genealogy.v",
+            ".view.v"
+        ],
+        "curveSubTypeMapping": [
+            ".value.v",
+            ".perm_id.v",
+            ".domain.v",
+            ".identifier_type.v"
+        ],
+        "exchangeCountryFanout": [
+            ".english.v",
+            ".qcode_genealogy.v",
+            ".multilanguages.v",
+            ".english_genealogy.v",
+            ".multilanguage_genealogy.v",
+            ".qcode.v",
+            ".perm_id.v",
+            ".fanout_type.v",
+            ".perm_id_genealogy.v",
+            ".view.v"
+        ],
+        "exchangeCountryMapping": [
+            ".value.v",
+            ".perm_id.v",
+            ".domain.v",
+            ".identifier_type.v"
+        ],
+        "fd1": [
+            ".Description.v",
+            ".Code.v"
+        ],
+        "fd2": [
+            ".Description.v",
+            ".Code.v"
+        ],
+        "firstCurrency": [
+            ".a.currencyId"
+        ],
+        "firstCurrencyExtIdentifier": [
+            ".IdentifierValue.v",
+            ".IdentifierValue.a.identifierEntityId",
+            ".IdentifierValue.a.effectiveFrom",
+            ".IdentifierValue.a.identifierEntityTypeId",
+            ".IdentifierValue.a.identifierTypeId"
+        ],
+        "firstCurrencyFanout": [
+            ".qcode.v",
+            ".japanese.v",
+            ".multilanguages.v",
+            ".english.v",
+            ".chinese.v",
+            ".perm_id.v",
+            ".fanout_type.v",
+            ".perm_id_genealogy.v",
+            ".view.v"
+        ],
+        "firstCurrencyIdentifier": [
+            ".IdentifierValue.v",
+            ".IdentifierValue.a.identifierEntityId",
+            ".IdentifierValue.a.effectiveFrom",
+            ".IdentifierValue.a.identifierEntityTypeId",
+            ".IdentifierValue.a.identifierTypeId"
+        ],
+        "iborTypeFanout": [
+            ".english.v",
+            ".multilanguages.v",
+            ".qcode.v",
+            ".perm_id.v",
+            ".fanout_type.v",
+            ".perm_id_genealogy.v",
+            ".view.v"
+        ],
+        "iborTypeMapping": [
+            ".value.v",
+            ".perm_id.v",
+            ".domain.v",
+            ".identifier_type.v"
+        ],
+        "instrument": [
+            ".FxirInstrTenorId.v",
+            ".a.fxirInstrumentId",
+            ".FxirInstrTenorType.v"
+        ],
+        "instrumentIdentifier": [
+            ".IdentifierValue.v",
+            ".IdentifierValue.a.identifierEntityId",
+            ".IdentifierValue.a.effectiveFrom",
+            ".IdentifierValue.a.identifierEntityTypeId",
+            ".IdentifierValue.a.identifierTypeId"
+        ],
+        "parentChainVehicle": [
+            ".a.vehicleId"
+        ],
+        "priceTypeFanout": [
+            ".english.v",
+            ".japanese.v",
+            ".qcode_genealogy.v",
+            ".multilanguages.v",
+            ".chinese.v",
+            ".qcode.v",
+            ".perm_id.v",
+            ".fanout_type.v",
+            ".perm_id_genealogy.v",
+            ".view.v"
+        ],
+        "priceTypeMapping": [
+            ".value.v",
+            ".perm_id.v",
+            ".domain.v",
+            ".identifier_type.v"
+        ],
+        "primaryInstrument": [
+            ".a.fxirInstrumentId",
+            ".FxirInstrTenorType.v",
+            ".FxirInstrTenorId.v"
+        ],
+        "quote": [
+            ".FxirQuoteScalingFactor.v",
+            ".a.fxirQuoteId",
+            ".FxirQuoteShortDisplayName.v",
+            ".FxirQuoteLongDisplayName.v",
+            ".FxirQuoteContributorType.v",
+            ".FxirQuotePriceType.v",
+            ".FxirQuoteIsOffShore.v",
+            ".FxirQuotePriceSourceCode.v",
+            ".FxirQuoteContributorCode.v",
+            ".FxirQuotePermissionableEntity.v"
+        ],
+        "rateTypeFanout": [
+            ".english.v",
+            ".multilanguages.v",
+            ".qcode.v",
+            ".perm_id.v",
+            ".fanout_type.v",
+            ".perm_id_genealogy.v",
+            ".view.v"
+        ],
+        "rateTypeMapping": [
+            ".value.v",
+            ".perm_id.v",
+            ".domain.v",
+            ".identifier_type.v"
+        ],
+        "secondCurrency": [
+            ".a.currencyId"
+        ],
+        "secondCurrencyExtIdentifier": [
+            ".IdentifierValue.v",
+            ".IdentifierValue.a.identifierEntityId",
+            ".IdentifierValue.a.effectiveFrom",
+            ".IdentifierValue.a.identifierEntityTypeId",
+            ".IdentifierValue.a.identifierTypeId"
+        ],
+        "secondCurrencyFanout": [
+            ".english.v",
+            ".japanese.v",
+            ".multilanguages.v",
+            ".qcode.v",
+            ".chinese.v",
+            ".perm_id.v",
+            ".fanout_type.v",
+            ".perm_id_genealogy.v",
+            ".view.v"
+        ],
+        "secondCurrencyIdentifier": [
+            ".IdentifierValue.v",
+            ".IdentifierValue.a.identifierEntityId",
+            ".IdentifierValue.a.effectiveFrom",
+            ".IdentifierValue.a.identifierEntityTypeId",
+            ".IdentifierValue.a.identifierTypeId"
+        ],
+        "structure": [
+            ".FxirStructLongDisplayName.v",
+            ".FxirStructNonDeliverableFl.v",
+            ".FxirStructCrossAttrs.FxirStructCrossAttr.FxirStructCrossAttrCrossRateDecimals.v",
+            ".a.fxirStructureId",
+            ".FxirStructTenorType.v",
+            ".FxirStructMrkConventionFl.v",
+            ".FxirStructCrossAttrs.FxirStructCrossAttr.FxirStructCrossAttrSwapPointDecimals.v",
+            ".FxirStructCurveSubType.v",
+            ".FxirStructRateType.v",
+            ".FxirStructIborType.v",
+            ".FxirStructCurrencies.FxirStructCurrency.FxirStructCurAttrs.FxirStructCurAttr.a.fxirStructCurAttrIsOffShore",
+            ".FxirStructAssetClassId.v",
+            ".FxirStructCrossAttrs.FxirStructCrossAttr.FxirStructCrossAttrSwapPointScaling.v",
+            ".FxirStructCurrencies.FxirStructCurrency.FxirStructCurrencyId.v",
+            ".FxirStructTenorId.v"
+        ],
+        "structureForFirstCurrency": [
+            ".a.fxirStructureId",
+            ".FxirStructCurrencies.FxirStructCurrency.FxirStructCurrencyId.v",
+            ".FxirStructAssetClassId.v",
+            ".FxirStructCurveSubType.v",
+            ".FxirStructTenorId.v",
+            ".FxirStructIborType.v",
+            ".FxirStructRateType.v"
+        ],
+        "structureForSecondCurrency": [
+            ".a.fxirStructureId",
+            ".FxirStructCurrencies.FxirStructCurrency.FxirStructCurrencyId.v",
+            ".FxirStructAssetClassId.v",
+            ".FxirStructCurveSubType.v",
+            ".FxirStructTenorId.v",
+            ".FxirStructIborType.v",
+            ".FxirStructRateType.v"
+        ],
+        "tenorFanout": [
+            ".ranking.v",
+            ".english.v",
+            ".qcode_genealogy.v",
+            ".multilanguages.v",
+            ".english_genealogy.v",
+            ".multilanguage_genealogy.v",
+            ".qcode.v",
+            ".perm_id.v",
+            ".fanout_type.v",
+            ".perm_id_genealogy.v",
+            ".view.v"
+        ],
+        "tenorIdFanout": [
+            ".ranking.v",
+            ".english.v",
+            ".qcode_genealogy.v",
+            ".multilanguages.v",
+            ".english_genealogy.v",
+            ".multilanguage_genealogy.v",
+            ".qcode.v",
+            ".perm_id.v",
+            ".fanout_type.v",
+            ".perm_id_genealogy.v",
+            ".view.v"
+        ],
+        "tenorTypeFanout": [
+            ".english.v",
+            ".multilanguages.v",
+            ".qcode.v",
+            ".perm_id.v",
+            ".fanout_type.v",
+            ".perm_id_genealogy.v",
+            ".view.v"
+        ],
+        "tenorTypeMapping": [
+            ".value.v",
+            ".perm_id.v",
+            ".domain.v",
+            ".identifier_type.v"
+        ],
+        "undlyLeg1": [
+            ".FxirUndlyType.v",
+            ".FxirUndlyIborType.v",
+            ".FxirUndlyCpnCalcMethod.v",
+            ".FxirUndlyUnderlyingRIC.v",
+            ".a.fxirUndlyStructureId",
+            ".FxirUndlyFrequency.v",
+            ".a.fxirUndlyAttrOid"
+        ],
+        "undlyLeg2": [
+            ".FxirUndlyCpnCalcMethod.v",
+            ".FxirUndlyIborType.v",
+            ".FxirUndlyType.v",
+            ".FxirUndlyUnderlyingRIC.v",
+            ".a.fxirUndlyStructureId",
+            ".FxirUndlyFrequency.v",
+            ".a.fxirUndlyAttrOid"
+        ],
+        "vehicle": [
+            ".a.vehicleId"
+        ],
+        "vehicleChain": [
+            ".FxirChainVehicleId.v",
+            ".FxirChainType.v",
+            ".a.fxirChainOid"
+        ],
+        "vehicleIdentifier": [
+            ".IdentifierValue.v",
+            ".IdentifierValue.a.identifierEntityId",
+            ".IdentifierValue.a.effectiveFrom",
+            ".IdentifierValue.a.identifierEntityTypeId",
+            ".IdentifierValue.a.identifierTypeId"
+        ],
+        "vehicleQuote": [
+            ".a.vehicleId"
+        ]
+    },
+    "recordFilters": {
+        "IsParentChainOf": "(.RelationObjectId.a.relationshipType == \"IsParentChainOf\" )",
+        "IsPrimaryChainOf": "(.RelationObjectId.a.relationshipType == \"IsPrimaryChainOf\" )",
+        "IsPrimaryQuoteOf": "(.RelationObjectId.a.relationshipType == \"IsPrimaryQuoteOf\" )",
+        "IsQuoteOf": "(.RelationObjectId.a.relationshipType == \"IsQuoteOf\" )",
+        "IsStructureOf": "(.RelationObjectId.a.relationshipType == \"IsStructureOf\" )",
+        "IsVehicleOf": "(.RelationObjectId.a.relationshipType == \"IsVehicleOf\" )",
+        "assetClassFanout": "(.view.v == 404303  && .fanout_type.v == \"Long\" )",
+        "contrLocCode": "(.IdentifierValue.a.identifierEntityType  ==  \"TimeZone\"  && .IdentifierValue.a.identifierTypeCode  ==  \"TsfcpTZCode\" )",
+        "contributorCountryFanout": "(.view.v == 404303  && .fanout_type.v == \"Long\" )",
+        "contributorCountryMapping": "(.identifier_type.v == \"GcodeCountryCode\"  && .domain.v == \"Geography\" )",
+        "contributorTypeFanout": "(.view.v == 404303  && .fanout_type.v == \"Long\" )",
+        "contributorTypeMapping": "(.identifier_type.v == \"ContributorTypeCode\"  && .domain.v == \"\" )",
+        "curveSubTypeFanout": "(.view.v == 404303  && .fanout_type.v == \"Constituent\" )",
+        "curveSubTypeMapping": "(.identifier_type.v == \"\"  && .domain.v == \"CurveSubType\" )",
+        "exchangeCountryFanout": "(.view.v == 404303  && .fanout_type.v == \"Long\" )",
+        "exchangeCountryMapping": "(.identifier_type.v == \"GcodeCountryCode\"  && .domain.v == \"Geography\" )",
+        "firstCurrencyExtIdentifier": "(.IdentifierValue.a.identifierTypeCode == \"Iso4217Ext\" )",
+        "firstCurrencyFanout": "(.view.v == 404303  && .fanout_type.v == \"Long\" )",
+        "firstCurrencyIdentifier": "(.IdentifierValue.a.identifierTypeCode == \"Iso4217\" )",
+        "iborTypeFanout": "(.view.v == 404303  && .fanout_type.v == \"Long\" )",
+        "iborTypeMapping": "(.identifier_type.v == \"\"  && .domain.v == \"IborType\" )",
+        "instrumentIdentifier": "(.IdentifierValue.a.identifierTypeCode == \"CRT\" )",
+        "priceTypeFanout": "(.view.v == 404303  && .fanout_type.v == \"Long\" )",
+        "priceTypeMapping": "(.identifier_type.v == \"PriceTypeCode\"  && .domain.v == \"\" )",
+        "quote": "(.FxirQuotePermissionableEntity.v != 0 && .FxirQuotePermissionableEntity.v != 19 && .FxirQuotePermissionableEntity.v != 122 && .FxirQuotePermissionableEntity.v != 141 && .FxirQuotePermissionableEntity.v != 3899 && .FxirQuotePermissionableEntity.v != 3987 && .FxirQuotePermissionableEntity.v != 4000 && .FxirQuotePermissionableEntity.v != 4612 && .FxirQuotePermissionableEntity.v != 5208 && .FxirQuotePermissionableEntity.v != 5312 && .FxirQuotePermissionableEntity.v != 5638 && .FxirQuotePermissionableEntity.v != 6246 && .FxirQuotePermissionableEntity.v != 6496 && .FxirQuotePermissionableEntity.v != 6800 && .FxirQuotePermissionableEntity.v != 6913 && .FxirQuotePermissionableEntity.v != 6914 && .FxirQuotePermissionableEntity.v != 6915 && .FxirQuotePermissionableEntity.v != 6916 && .FxirQuotePermissionableEntity.v != 6917 && .FxirQuotePermissionableEntity.v != 6918 && .FxirQuotePermissionableEntity.v != 6919 && .FxirQuotePermissionableEntity.v != 6920 && .FxirQuotePermissionableEntity.v != 6921 && .FxirQuotePermissionableEntity.v != 6922 && .FxirQuotePermissionableEntity.v != 6923 && .FxirQuotePermissionableEntity.v != 6924 && .FxirQuotePermissionableEntity.v != 7000 && .FxirQuotePermissionableEntity.v != 7939 && .FxirQuotePermissionableEntity.v != 7973 && .FxirQuotePermissionableEntity.v != 3784 && .FxirQuotePermissionableEntity.v != 138 && .FxirQuotePermissionableEntity.v != 1804 && .FxirQuotePermissionableEntity.v != 1805 && .FxirQuotePermissionableEntity.v != 1807 && .FxirQuotePermissionableEntity.v != 1808 && .FxirQuotePermissionableEntity.v != 1701 && .FxirQuotePermissionableEntity.v != 1703 && .FxirQuotePermissionableEntity.v != 1727 && .FxirQuotePermissionableEntity.v != 1745 && .FxirQuotePermissionableEntity.v != 1571 && .FxirQuotePermissionableEntity.v != 1507 && .FxirQuotePermissionableEntity.v != 1665 && .FxirQuotePermissionableEntity.v != 3701 && .FxirQuotePermissionableEntity.v != 3706 && .FxirQuotePermissionableEntity.v != 3707 && .FxirQuotePermissionableEntity.v != 3708 && .FxirQuotePermissionableEntity.v != 3718 && .FxirQuotePermissionableEntity.v != 3740 && .FxirQuotePermissionableEntity.v != 3749 && .FxirQuotePermissionableEntity.v != 3759 && .FxirQuotePermissionableEntity.v != 766 && .FxirQuotePermissionableEntity.v != 994 && .FxirQuotePermissionableEntity.v != 8613 && .FxirQuotePermissionableEntity.v != 8627 && .FxirQuotePermissionableEntity.v != 8631 && .FxirQuotePermissionableEntity.v != 1959)",
+        "rateTypeFanout": "(.view.v == 404303  && .fanout_type.v == \"Long\" )",
+        "rateTypeMapping": "(.identifier_type.v == \"\"  && .domain.v == \"CurveRateType\" )",
+        "secondCurrencyExtIdentifier": "(.IdentifierValue.a.identifierTypeCode == \"Iso4217Ext\" )",
+        "secondCurrencyFanout": "(.view.v == 404303  && .fanout_type.v == \"Long\" )",
+        "secondCurrencyIdentifier": "(.IdentifierValue.a.identifierTypeCode == \"Iso4217\" )",
+        "tenorFanout": "(.view.v == 404303  && .fanout_type.v == \"Long\" )",
+        "tenorIdFanout": "(.view.v == 404303  && .fanout_type.v == \"Long\" )",
+        "tenorTypeFanout": "(.view.v == 404303  && .fanout_type.v == \"Long\" )",
+        "tenorTypeMapping": "(.identifier_type.v == \"\"  && .domain.v == \"NdaTenorType\" )",
+        "undlyLeg1": "(.FxirUndlyLegNum.v == 1 )",
+        "undlyLeg2": "(.FxirUndlyLegNum.v == 2 )",
+        "vehicleIdentifier": "(.IdentifierValue.a.identifierTypeCode == \"RIC\" )"
+    },
+    "rootType": "quote",
+    "typemapping": {
+        "IsParentChainOf": {
+            "domain": "FXIR",
+            "typeName": "Relationship"
+        },
+        "IsPrimaryChainOf": {
+            "domain": "FXIR",
+            "typeName": "Relationship"
+        },
+        "IsPrimaryQuoteOf": {
+            "domain": "FXIR",
+            "typeName": "Relationship"
+        },
+        "IsQuoteOf": {
+            "domain": "FXIR",
+            "typeName": "Relationship"
+        },
+        "IsStructureOf": {
+            "domain": "FXIR",
+            "typeName": "Relationship"
+        },
+        "IsVehicleOf": {
+            "domain": "FXIR",
+            "typeName": "Relationship"
+        },
+        "assetClassFanout": {
+            "domain": "FXIRREF",
+            "typeName": "Metadata_Fanout"
+        },
+        "bankGuide": {
+            "domain": "FXIRREF",
+            "typeName": "BankGuideMapping"
+        },
+        "contrLoc": {
+            "domain": "DIR",
+            "typeName": "TimeZone"
+        },
+        "contrLocCode": {
+            "domain": "DIR",
+            "typeName": "Identifier"
+        },
+        "contributor": {
+            "domain": "FXIRREF",
+            "typeName": "Contributor"
+        },
+        "contributorCountryFanout": {
+            "domain": "FXIRREF",
+            "typeName": "Metadata_Fanout"
+        },
+        "contributorCountryMapping": {
+            "domain": "FXIRREF",
+            "typeName": "Metadata_Mapping"
+        },
+        "contributorTypeFanout": {
+            "domain": "FXIRREF",
+            "typeName": "Metadata_Fanout"
+        },
+        "contributorTypeMapping": {
+            "domain": "FXIRREF",
+            "typeName": "Metadata_Mapping"
+        },
+        "curveSubTypeFanout": {
+            "domain": "FXIRREF",
+            "typeName": "Metadata_Fanout"
+        },
+        "curveSubTypeMapping": {
+            "domain": "FXIRREF",
+            "typeName": "Metadata_Mapping"
+        },
+        "exchangeCountryFanout": {
+            "domain": "FXIRREF",
+            "typeName": "Metadata_Fanout"
+        },
+        "exchangeCountryMapping": {
+            "domain": "FXIRREF",
+            "typeName": "Metadata_Mapping"
+        },
+        "fd1": {
+            "domain": "FXIRREF",
+            "typeName": "FrequencyDescription"
+        },
+        "fd2": {
+            "domain": "FXIRREF",
+            "typeName": "FrequencyDescription"
+        },
+        "firstCurrency": {
+            "domain": "DIR",
+            "typeName": "Currency"
+        },
+        "firstCurrencyExtIdentifier": {
+            "domain": "DIR",
+            "typeName": "Identifier"
+        },
+        "firstCurrencyFanout": {
+            "domain": "FXIRREF",
+            "typeName": "Metadata_Fanout"
+        },
+        "firstCurrencyIdentifier": {
+            "domain": "DIR",
+            "typeName": "Identifier"
+        },
+        "iborTypeFanout": {
+            "domain": "FXIRREF",
+            "typeName": "Metadata_Fanout"
+        },
+        "iborTypeMapping": {
+            "domain": "FXIRREF",
+            "typeName": "Metadata_Mapping"
+        },
+        "instrument": {
+            "domain": "FXIR",
+            "typeName": "FxirInstrument"
+        },
+        "instrumentIdentifier": {
+            "domain": "FXIR",
+            "typeName": "Identifier"
+        },
+        "parentChainVehicle": {
+            "domain": "FXIR",
+            "typeName": "FxirVehicle"
+        },
+        "priceTypeFanout": {
+            "domain": "FXIRREF",
+            "typeName": "Metadata_Fanout"
+        },
+        "priceTypeMapping": {
+            "domain": "FXIRREF",
+            "typeName": "Metadata_Mapping"
+        },
+        "primaryInstrument": {
+            "domain": "FXIR",
+            "typeName": "FxirInstrument"
+        },
+        "quote": {
+            "domain": "FXIR",
+            "typeName": "FxirQuote"
+        },
+        "rateTypeFanout": {
+            "domain": "FXIRREF",
+            "typeName": "Metadata_Fanout"
+        },
+        "rateTypeMapping": {
+            "domain": "FXIRREF",
+            "typeName": "Metadata_Mapping"
+        },
+        "secondCurrency": {
+            "domain": "DIR",
+            "typeName": "Currency"
+        },
+        "secondCurrencyExtIdentifier": {
+            "domain": "DIR",
+            "typeName": "Identifier"
+        },
+        "secondCurrencyFanout": {
+            "domain": "FXIRREF",
+            "typeName": "Metadata_Fanout"
+        },
+        "secondCurrencyIdentifier": {
+            "domain": "DIR",
+            "typeName": "Identifier"
+        },
+        "structure": {
+            "domain": "FXIR",
+            "typeName": "FxirStructure"
+        },
+        "structureForFirstCurrency": {
+            "domain": "FXIR",
+            "typeName": "FxirStructure"
+        },
+        "structureForSecondCurrency": {
+            "domain": "FXIR",
+            "typeName": "FxirStructure"
+        },
+        "tenorFanout": {
+            "domain": "FXIRREF",
+            "typeName": "Metadata_Fanout"
+        },
+        "tenorIdFanout": {
+            "domain": "FXIRREF",
+            "typeName": "Metadata_Fanout"
+        },
+        "tenorTypeFanout": {
+            "domain": "FXIRREF",
+            "typeName": "Metadata_Fanout"
+        },
+        "tenorTypeMapping": {
+            "domain": "FXIRREF",
+            "typeName": "Metadata_Mapping"
+        },
+        "undlyLeg1": {
+            "domain": "FXIR",
+            "typeName": "FxirUnderlyingAttr"
+        },
+        "undlyLeg2": {
+            "domain": "FXIR",
+            "typeName": "FxirUnderlyingAttr"
+        },
+        "vehicle": {
+            "domain": "FXIR",
+            "typeName": "FxirVehicle"
+        },
+        "vehicleChain": {
+            "domain": "FXIR",
+            "typeName": "FxirChain"
+        },
+        "vehicleIdentifier": {
+            "domain": "FXIR",
+            "typeName": "Identifier"
+        },
+        "vehicleQuote": {
+            "domain": "FXIR",
+            "typeName": "FxirVehicle"
+        }
+    }
+}

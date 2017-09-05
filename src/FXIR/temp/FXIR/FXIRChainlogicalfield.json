@@ -1,0 +1,81 @@
+{
+  "Relationship": [
+    {
+      "fields": [
+        "/Relationship/RelationObjectId/a/relatedObjectId"
+      ],
+      "mpName": [
+        "HasInstruments0"
+      ],
+      "mpPath": [
+        "/Relationship/"
+      ]
+    },
+    {
+      "fields": [
+        "/Relationship/RelationObjectId/a/relatedObjectId"
+      ],
+      "mpName": [
+        "HasContributedChains0"
+      ],
+      "mpPath": [
+        "/Relationship/"
+      ]
+    },
+    {
+      "fields": [
+        "/Relationship/RelationObjectId/v"
+      ],
+      "mpName": [
+        "HasConstituents0"
+      ],
+      "mpPath": [
+        "/Relationship/"
+      ]
+    },
+    {
+      "fields": [
+        "/Relationship/RelationObjectId/a/relatedObjectId"
+      ],
+      "mpName": [
+        "IsPrimaryVehicleFor1"
+      ],
+      "mpPath": [
+        "/Relationship/"
+      ]
+    },
+    {
+      "fields": [
+        "/Relationship/RelationObjectId/v"
+      ],
+      "mpName": [
+        "IsPrimaryVehicleFor0"
+      ],
+      "mpPath": [
+        "/Relationship/"
+      ]
+    },
+    {
+      "fields": [
+        "/Relationship/RelationObjectId/a/relatedObjectId"
+      ],
+      "mpName": [
+        "IsChainFor1"
+      ],
+      "mpPath": [
+        "/Relationship/"
+      ]
+    },
+    {
+      "fields": [
+        "/Relationship/RelationObjectId/v"
+      ],
+      "mpName": [
+        "IsChainFor0"
+      ],
+      "mpPath": [
+        "/Relationship/"
+      ]
+    }
+  ]
+}

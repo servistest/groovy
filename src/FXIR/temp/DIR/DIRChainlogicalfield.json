@@ -1,0 +1,70 @@
+{
+  "Identifier": [
+    {
+      "fields": [
+        "/Identifier/IdentifierValue/a/identifierEntityId"
+      ],
+      "mpName": [
+        "secondCurrencyIdentifier0"
+      ],
+      "mpPath": [
+        "/Identifier/"
+      ]
+    },
+    {
+      "fields": [
+        "/Identifier/IdentifierValue/v"
+      ],
+      "mpName": [
+        "contrLocCode0"
+      ],
+      "mpPath": [
+        "/Identifier/"
+      ]
+    },
+    {
+      "fields": [
+        "/Identifier/IdentifierValue/a/identifierEntityId"
+      ],
+      "mpName": [
+        "contrLocCode1"
+      ],
+      "mpPath": [
+        "/Identifier/"
+      ]
+    },
+    {
+      "fields": [
+        "/Identifier/IdentifierValue/a/identifierEntityId"
+      ],
+      "mpName": [
+        "firstCurrencyExtIdentifier0"
+      ],
+      "mpPath": [
+        "/Identifier/"
+      ]
+    },
+    {
+      "fields": [
+        "/Identifier/IdentifierValue/a/identifierEntityId"
+      ],
+      "mpName": [
+        "secondCurrencyExtIdentifier0"
+      ],
+      "mpPath": [
+        "/Identifier/"
+      ]
+    },
+    {
+      "fields": [
+        "/Identifier/IdentifierValue/a/identifierEntityId"
+      ],
+      "mpName": [
+        "firstCurrencyIdentifier0"
+      ],
+      "mpPath": [
+        "/Identifier/"
+      ]
+    }
+  ]
+}
