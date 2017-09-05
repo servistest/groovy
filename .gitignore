@@ -23,3 +23,7 @@ hs_err_pid*
 /out
 
 !/.gitignore
+/src/currency_script/Currency.xml
+/src/currency_script/export.csv
+/src/currency_script/export.old
+/src/currency/sql_from_cloud/
